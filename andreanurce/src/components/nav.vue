@@ -23,9 +23,14 @@ export default {
 
 <style scoped>
 .main-bar{
+    position:absolute;
+    top: 0;
+    z-index: 1;
+    width: 100% ;
+    height: 78px;
    display: flex;
    justify-content: center;
-   background-color: transparent;
+   background-color: #F9F9FF;
 }
 .nav-bar{
     display: flex;
@@ -39,16 +44,17 @@ li{
     padding: 25px 16px;
     font-weight: 400;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
-    font-family: "Roboto";
     border-bottom: 0px transparent;
     transition: .3s ease-in-out;
-    box-sizing: content-box;
+
 
 }
 li:hover{
+
      border-bottom: 1px solid #e45447;
 }
+
 </style> >
 
