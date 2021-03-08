@@ -4,7 +4,7 @@
         <div class="services-left">
             <h5>MY SERVICES</h5>
             <h1>I can make this  awesome things </h1>
-            <p>I understand what your business means to you,your requirements considering trends.Smet nemo excepturi voluptas eligendi .</p>
+            <p>I understand what your business means to you,your requirements considering trends.</p>
         </div>
         <div class="services-right">
             <div class="containerWrapper" >
@@ -44,6 +44,7 @@ export default {
   column-gap: 40px;
   row-gap: 40px;
   justify-content: center;
+
 }
 .containerWrapper > :nth-child(2) {
   margin-top : 60px;
@@ -55,19 +56,20 @@ export default {
 }
 
 .container{
+  overflow: hidden;
   padding: 50px 40px;
   width: 240px ;
-  height: 208px;
   background-color: white;
-  border-radius: 10px;
-  box-shadow:0  12px 6px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(85, 128, 255, 0.2);
   z-index: 2;
   transition: all 0.6s ease-in-out;
   text-align: center;
 }
 .container > p {
+  padding: 10px 0;
   color : gray;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:  " Roboto", sans-serif;
 }
 .container > h2 {
   color : black;
@@ -98,6 +100,26 @@ export default {
     width: 400px;
     font-weight: 400;
 }
+.services-left > h5{
+font-family: "Roboto", sans-serif;
+color: #777777;
+font-size: 15px;
+font-weight: 400;
+}
+.services-left > h1{
+    color: #222222;
+    line-height: 1.5;
+    font-size:50px;
+}
+.services-left > p{
+    font-family: "Roboto", sans-serif;
+color: #777777;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.625em;
+}
+
+
 .services-right{
     width: 600px;
 }
