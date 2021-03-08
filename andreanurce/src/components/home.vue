@@ -12,6 +12,7 @@
             <img src="../assets/hero_right.png" alt="">
         </div>
         </div>
+        <br>
   </div>
 </template>
 
@@ -21,7 +22,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .download > p{
     margin-top:30px;
     background: #90acd1;
