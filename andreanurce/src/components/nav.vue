@@ -72,6 +72,9 @@ ul > a:hover::before{
 width: 84px;
 transition: all 0.3s ease 0s;
 }
+.active > li{
+    font-weight: bolder;
+}
 .active::before{
     position: absolute;
 content: "";
@@ -81,6 +84,7 @@ height: 1px;
 width: 84px;
 height: 2px; 
 transition: all 0.3s ease 0s;
+ font-weight: bolder;
 }
 
 
