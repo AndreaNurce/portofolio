@@ -3,6 +3,7 @@
     <home/>
     <navBar/>
     <services/>
+    <about/>
   </div>
 </template>
 
@@ -10,11 +11,14 @@
 import navBar from './components/nav'
 import home from './components/home'
 import services from './components/services'
+import About from './components/about'
+
 export default {
   components :  {
     navBar,
     home,
-    services
+    services,
+    About,
   }
 }
 </script>
