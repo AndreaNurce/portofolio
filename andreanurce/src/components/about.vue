@@ -102,7 +102,6 @@ height: 2px;
 left: 0;
 content: "";
 position: absolute;
-left:0;
 background: #e45447;
 }
 .about-right > h1::after{

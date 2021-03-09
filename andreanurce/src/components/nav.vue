@@ -3,13 +3,13 @@
       <div class="nav-bar" >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
           <ul>
-              <a href="#Home" > <li class="li">Home</li></a>
-              <a href="#Service"> <li class="li">Service</li></a>
-              <a href="#About"> <li class="li">About</li></a>
-              <a href="#Resume"> <li class="li">Resume</li></a>
-              <a href="#Works"> <li class="li">Works</li></a>
-              <a href="#Blog"> <li class="li">Blog</li></a>
-              <a href="#Contact"> <li class="li">Contact</li></a>
+              <a href="#Home" > <li>Home</li></a>
+              <a href="#Service"> <li>Service</li></a>
+              <a href="#About"> <li>About</li></a>
+              <a href="#Resume"> <li>Resume</li></a>
+              <a href="#Works"> <li>Works</li></a>
+              <a href="#Blog"> <li>Blog</li></a>
+              <a href="#Contact"> <li>Contact</li></a>
           </ul>
       </div>
   </div>
@@ -46,15 +46,26 @@ li{
     display: inline-block;
     font-size: 16px;
     text-transform: capitalize;
-    border-bottom: 0px transparent;
-    transition: .3s ease-in-out;
-
+    transition: all 0.3s ease 0s;
+    width: 60px;
+    text-align: center;
 
 }
-li:hover{
-
-     border-bottom: 1px solid #e45447;
+ul > a::before{
+position: absolute;
+content: "";
+bottom: 14px;
+background: #e45447;
+height: 1px;
+width: 0px;
+height: 2px; 
+transition: all 0.3s ease 0s;
 }
+ul > a:hover::before{
+width: 92px;
+transition: all 0.3s ease 0s;
+}
+
 
 </style> >
 
