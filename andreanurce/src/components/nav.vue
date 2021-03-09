@@ -3,12 +3,12 @@
       <div class="nav-bar" >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
           <ul>
-              <a href="#Home" > <li>Home</li></a>
-              <a href="#Service"> <li>Service</li></a>
-              <a href="#About"> <li>About</li></a>
-              <a href="#Resume"> <li>Resume</li></a>
-              <a href="#Works"> <li>Works</li></a>
-              <a href="#Blog"> <li>Blog</li></a>
+              <a href="#Home"  :class="{active: tag == 'Home' }"  > <li>Home</li></a>
+              <a href="#Service" :class="{active: tag == 'Service' }" > <li>Service</li></a>
+              <a href="#About" :class="{active: tag == 'About' }" > <li>About</li></a>
+              <a href="#Resume" :class="{active: tag == 'Resume' }" > <li>Resume</li></a>
+              <a href="#Works" :class="{active: tag == 'Works' }" > <li>Works</li></a>
+              <a href="#Blog" :class="{active: tag == 'Blog' }" > <li>Blog</li></a>
               <a href="#Contact"> <li>Contact</li></a>
           </ul>
       </div>
@@ -17,7 +17,11 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            tag : "Home"
+        }
+    },
 }
 </script>
 
@@ -41,7 +45,7 @@ export default {
 li{
     color: #222222;
     font-weight: 400;
-    padding: 25px 16px;
+    padding: 25px 12px;
     font-weight: 400;
     display: inline-block;
     font-size: 16px;
@@ -50,6 +54,9 @@ li{
     width: 60px;
     text-align: center;
 
+}
+ul > a {
+    padding : 0 5px;
 }
 ul > a::before{
 position: absolute;
@@ -62,7 +69,17 @@ height: 2px;
 transition: all 0.3s ease 0s;
 }
 ul > a:hover::before{
-width: 92px;
+width: 84px;
+transition: all 0.3s ease 0s;
+}
+.active::before{
+    position: absolute;
+content: "";
+bottom: 14px;
+background: #e45447;
+height: 1px;
+width: 84px;
+height: 2px; 
 transition: all 0.3s ease 0s;
 }
 
