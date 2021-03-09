@@ -27,7 +27,7 @@ export default {
     top: 0;
     z-index: 1;
     width: 100% ;
-    height: 78px;
+    height: 80px;
    display: flex;
    justify-content: center;
    background-color: #F9F9FF;
