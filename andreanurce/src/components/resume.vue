@@ -10,17 +10,16 @@
                     <li>Skills</li>
                     <li>Award</li>
                 </ul>
-
             </div>
             <div class="resume-right">
                 <h1>Education </h1>
                 <div class="container">
                     <div class="logo">
-                        <img src="../assets/4.png" height="50px" alt="">
+                        <i class="fa fa-graduation-cap"></i>
                     </div>
                     <div class="content">
-                        <h3>2014-2015</h3>
-                        <h2>Bachelor in Computer Science</h2>
+                        <h5 class="year">2020-2021</h5>
+                        <h4 class="sub-tittle">Bachelor in Computer Science</h4>
                         <p>Facility of natural science</p>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel explicabo, in unde perferendis placeat eaque numquam asperiores laborum repellendus velit accusantium maxime! Ea repellendus iusto consectetur. Molestias reprehenderit ipsum libero.</p>
@@ -43,15 +42,79 @@ export default {
 </script>
 
 <style scoped>
+.content{
+    width : 70%;
+}
+.content > h5  {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222222;
+} 
+.content > h4  {
+    font-weight: 700;
+    font-size: 20px;
+    color: #222222;
+} 
+.content> p{
+    
+color: #777777;
+font-size: 15px;
+line-height: 1.65rem;
+}
+.fa {      
+  
+    font-size: 20px;
+    padding: 14px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    text-decoration: none;
+    border-radius : 50%;
+}
+
+.fa-graduation-cap{
+background-color: #90acd1;
+  color: white;
+} 
+
 .resume-right > h1 {
     padding: 24px 0 ;
+    font-size: 24px;
 }
 .container{
     display: flex;
-    padding : 24px 24px;
+    padding : 40px 24px;
     width: 100%;
     background-color: #f9f9ff;
     border-radius : 10px;
+transition: all 0.3s ease 0s;
+
+}
+.container:hover {
+    background-color:#90acd1;
+transition: all 0.3s ease 0s;
+    
+}
+.container:hover .fa {
+    background-color:white;
+transition: all 0.3s ease 0s;
+    
+}
+.container:hover .fa-graduation-cap {
+    color:black;
+transition: all 0.3s ease 0s;
+    
+}
+
+.container:hover > div:nth-child(2) > h4 ,
+.container:hover > div:nth-child(2) > h5 ,
+.container:hover > div:nth-child(2) > p {
+    color:white;
+transition: all 0.3s ease 0s;
+
+}
+.container:hover > {
+background-color:#90acd1;
 }
 .container > div {
     padding :0 12px;
