@@ -4,6 +4,7 @@
     <navBar/>
     <services/>
     <about/>
+    <resume/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import navBar from './components/nav'
 import home from './components/home'
 import services from './components/services'
 import About from './components/about'
+import resume from './components/resume'
 
 export default {
   components :  {
@@ -19,6 +21,7 @@ export default {
     home,
     services,
     About,
+    resume,
   }
 }
 </script>
