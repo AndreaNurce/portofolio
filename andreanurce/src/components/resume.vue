@@ -11,19 +11,23 @@
                     <li>Award</li>
                 </ul>
             </div>
+
             <div class="resume-right">
-                <h1>Education </h1>
+                <div :key="index" v-for="(current, index) in tittle" >
+                <h1 class="tittle">{{ current }} </h1>
                 <div class="container">
                     <div class="logo">
-                        <i class="fa fa-graduation-cap"></i>
+                        <i :class="logoClass[index]" class="fa"></i>
                     </div>
                     <div class="content">
-                        <h5 class="year">2020-2021</h5>
-                        <h4 class="sub-tittle">Bachelor in Computer Science</h4>
-                        <p>Facility of natural science</p>
+                        <h5 class="year">{{ year[index] }}</h5>
+                        <h4 class="sub-tittle">{{field[index]}}</h4>
+                        <p>{{name[index]}}</p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel explicabo, in unde perferendis placeat eaque numquam asperiores laborum repellendus velit accusantium maxime! Ea repellendus iusto consectetur. Molestias reprehenderit ipsum libero.</p>
+                        <p>{{ description[index] }}</p>
                     </div>
+                </div>
+                <br>
                 </div>
             </div>
         </div>
@@ -31,11 +35,17 @@
 </div>
 </template>
 
+
 <script>
 export default {
     data() {
         return {
-            
+            tittle : ["Education"," Experience"],
+            logoClass : ["fa-graduation-cap" ,"fa-briefcase"],
+            year : ["2020-2021","2020-2021"],
+            field : ["Bachelor in Computer Science","Bachelor in Computer Science"],
+            name : ["Facility of Natural Science","Facility of Natural Science"],
+            description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
         }
     },
 }
@@ -77,8 +87,8 @@ background-color: #90acd1;
   color: white;
 } 
 
-.resume-right > h1 {
-    padding: 24px 0 ;
+.tittle {
+    padding: 40px 0 ;
     font-size: 24px;
 }
 .container{
@@ -161,10 +171,11 @@ border-radius: 8px;
 }
 .sides-container{
     width: 75%;
-    display: flex;
+    display: flex ;
     justify-content: space-between;
     margin-top: 100px;
 }
+
 .resume-left{
     width: 30%;
     font-weight: 400;
@@ -182,6 +193,7 @@ transition: all 0.3s ease 0s;
 }
 .resume-right{
         width: 70%;
+        display: block;
 }
 .current{
     margin-left: 25px;
