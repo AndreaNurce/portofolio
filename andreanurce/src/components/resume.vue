@@ -13,41 +13,53 @@
             </div>
 
             <div class="resume-right">
-                <div :key="index" v-for="(current, index) in tittle" >
-                <h1 class="tittle">{{ current }} </h1>
-                <div class="container">
-                    <div class="logo">
-                        <i :class="logoClass[index]" class="fa"></i>
+                <div :key="index" v-for="(current, index) in info" >
+                <h1 class="tittle">{{info[index].tittle}}</h1>
+                    <div :key="index2" v-for="(current2, index2) in info[index].year" class="container">
+                      
+                      <div class="logo">
+                        <i :class="info[index].logoClass[index2]" class="fa fas"></i>
                     </div>
                     <div class="content">
-                        <h5 class="year">{{ year[index] }}</h5>
-                        <h4 class="sub-tittle">{{field[index]}}</h4>
-                        <p>{{name[index]}}</p>
+                        <h5 class="year">{{ info[index].year[index2] }}</h5>
+                        <h4 class="sub-tittle">{{info[index].field[index2]}}</h4>
+                        <p>{{info[index].name[index2]}}</p>
                         <br>
-                        <p>{{ description[index] }}</p>
+                        <p>{{ info[index].description[index2] }}</p>
                     </div>
                 </div>
-                <br>
+                </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
 </template>
-
 
 <script>
 export default {
     data() {
         return {
-            tittle : ["Education"," Experience"],
-            logoClass : ["fa-graduation-cap" ,"fa-briefcase"],
-            year : ["2020-2021","2020-2021"],
-            field : ["Bachelor in Computer Science","Bachelor in Computer Science"],
-            name : ["Facility of Natural Science","Facility of Natural Science"],
-            description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
-        }
-    },
+            info : [
+            {
+                    tittle : 'Education',
+                    year : ["2020-2021","2020-2021"],
+                    logoClass : ["fa-graduation-cap","fa-graduation-cap"],
+                    field : ["Bachelor in Computer Science","Bachelor in Computer Science"],
+                    name : ["Facility of Natural Science","Facility of Natural Science"],
+                    description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
+            },{
+                    tittle : 'Experience',
+                    year : ["2020-2021","2020-2021"],
+                    logoClass : ["fa-briefcase","fa-briefcase"],
+                    field : ["Bachelor in Computer Science","Bachelor in Computer Science"],
+                    name : ["Facility of Natural Science","Facility of Natural Science"],
+                    description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
+            }
+            ]
+}
+
+    }
 }
 </script>
 
@@ -82,10 +94,11 @@ line-height: 1.65rem;
     border-radius : 50%;
 }
 
-.fa-graduation-cap{
-background-color: #90acd1;
+.fa-graduation-cap   , .fa-briefcase{
+    background-color: #90acd1;
   color: white;
 } 
+
 
 .tittle {
     padding: 40px 0 ;
@@ -94,6 +107,7 @@ background-color: #90acd1;
 .container{
     display: flex;
     padding : 40px 24px;
+    margin: 20px 0;
     width: 100%;
     background-color: #f9f9ff;
     border-radius : 10px;
@@ -110,9 +124,15 @@ transition: all 0.3s ease 0s;
 transition: all 0.3s ease 0s;
     
 }
-.container:hover .fa-graduation-cap {
+.container:hover .fa-graduation-cap   {
     color:black;
-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.container:hover  .fa-briefcase {
+    color:black;
+    transition: all 0.3s ease 0s;
     
 }
 
