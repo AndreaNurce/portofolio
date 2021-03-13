@@ -5,6 +5,7 @@
     <services/>
     <about/>
     <resume/>
+    <projects/>
   </div>
 </template>
 
@@ -14,6 +15,8 @@ import home from './components/home'
 import services from './components/services'
 import About from './components/about'
 import resume from './components/resume'
+import projects from './components/projects'
+
 
 export default {
   components :  {
@@ -22,6 +25,7 @@ export default {
     services,
     About,
     resume,
+    projects
   }
 }
 </script>

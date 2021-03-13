@@ -8,7 +8,6 @@
                     <li >Education</li>
                     <li class="current">Experience</li>
                     <li>Skills</li>
-                    <li>Award</li>
                 </ul>
             </div>
 

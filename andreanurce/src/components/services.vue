@@ -48,13 +48,10 @@ export default {
 }
 .containerWrapper > :nth-child(2) {
   margin-top : 60px;
-
 }
 .containerWrapper > :nth-child(3) {
   margin-top : -60px;
-
 }
-
 .container{
   overflow: hidden;
   padding: 50px 40px;

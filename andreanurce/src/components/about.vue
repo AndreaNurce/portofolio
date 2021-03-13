@@ -76,7 +76,8 @@ line-height: 1.625em;
 .container-about{
     padding-top : 30px;
     height: 100vh;
-    background-color: #F9F9FF;z-index: 0;
+    background-color: #F9F9FF;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
