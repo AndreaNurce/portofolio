@@ -30,28 +30,15 @@
                 </div>
                     <h1 class="tittle" >Skills</h1>
                 <div class="skills-wrapper">
-                    <div class="skills-container">
-                        <div class="skill-level">
-                        <p  >Photoshop</p>
-                        <p>80%</p>
+                    <div v-for="(skill ,index) in skills" :key="index" class="skills-container">
+                        <div class="skill-level" :style="{width:skillLevel[index]}">
+                        <h3>{{skill}}</h3>
+                        <p>{{skillLevel[index]}}</p>
                         </div>
                         <div class="progress-bar-wrapper">
-                            <div class="progress-bar" style="width:80%;">
+                            <div class="progress-bar" :style="{width:skillLevel[index]}">
                                 
                             </div>
-                            
-                        </div>
-                    </div>
-                    <div class="skills-container">
-                        <div class="skill-level">
-                        <p  >Photoshop</p>
-                        <p>70%</p>
-                        </div>
-                        <div class="progress-bar-wrapper">
-                            <div class="progress-bar" style="width:70%;">
-                                
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -81,7 +68,9 @@ export default {
                     name : ["Facility of Natural Science","Facility of Natural Science"],
                     description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
             }
-            ]
+            ],
+            skills : ["Photoshop" ,"Illustrator" , "HTML/Css" , "Javascript" , "Vue.js","Node/Express" , "Git" , "Heroku" ,"MongoDB"],
+            skillLevel : ["75%","90%","85%","75%","65%" , "50%" , "75%" , "65%" , "50%"]
 }
 
     }
@@ -93,6 +82,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between ;
+}
+.skill-level > * {
+font-size: 16px;
+margin-bottom: 10px;
+font-weight: 600;
 }
 .progress-bar{
         height: 6px;
@@ -120,6 +114,7 @@ right: 0;
 .skills-container{
     width: 44%;
     margin-right: 6%;
+    padding : 20px 0;
     
 }
 .skills-wrapper{
@@ -176,6 +171,7 @@ transition: all 0.3s ease 0s;
 
 .tittle {
 font-size: 24px;
+padding: 20px 0;
 
 }
 .container{
@@ -273,6 +269,7 @@ margin-top: 100px;
 .resume-left{
 width: 30%;
 font-weight: 400;
+padding: 20px 0;
 }
 ul{
 list-style: none;
