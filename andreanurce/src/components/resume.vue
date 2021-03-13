@@ -14,26 +14,27 @@
 
             <div class="resume-right">
                 <div :key="index" v-for="(current, index) in info" >
-                <h1 class="tittle">{{info[index].tittle}}</h1>
+                    <h1 class="tittle">{{info[index].tittle}}</h1>
                     <div :key="index2" v-for="(current2, index2) in info[index].year" class="container">
-                      
-                      <div class="logo">
-                        <i :class="info[index].logoClass[index2]" class="fa fas"></i>
-                    </div>
-                    <div class="content">
-                        <h5 class="year">{{ info[index].year[index2] }}</h5>
-                        <h4 class="sub-tittle">{{info[index].field[index2]}}</h4>
-                        <p>{{info[index].name[index2]}}</p>
-                        <br>
-                        <p>{{ info[index].description[index2] }}</p>
+                        <div class="logo">
+                            <i :class="info[index].logoClass[index2]" class="fa fas"></i>
+                        </div>
+                        <div class="content">
+                            <h5 class="year">{{ info[index].year[index2] }}</h5>
+                            <h4 class="sub-tittle">{{info[index].field[index2]}}</h4>
+                            <p>{{info[index].name[index2]}}</p>
+                            <br>
+                            <p>{{ info[index].description[index2] }}</p>
+                        </div>
                     </div>
                 </div>
-                </div>
-
+                <div class="skills-wrapper">
+                    <h1 class="tittle" >Skills</h1>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -64,105 +65,116 @@ export default {
 </script>
 
 <style scoped>
+
 .content{
-    width : 70%;
+width : 70%;
+transition: all 0.3s ease 0s;
+
 }
 .content > h5  {
-    font-weight: 700;
-    font-size: 16px;
-    color: #222222;
+font-weight: 700;
+font-size: 16px;
+color: #222222;
+transition: all 0.3s ease 0s;
+
 } 
 .content > h4  {
-    font-weight: 700;
-    font-size: 20px;
-    color: #222222;
+font-weight: 700;
+font-size: 20px;
+color: #222222;
+transition: all 0.3s ease 0s;
+
 } 
 .content> p{
-    
+transition: all 0.3s ease 0s;
 color: #777777;
 font-size: 15px;
 line-height: 1.65rem;
 }
 .fa {      
-  
-    font-size: 20px;
-    padding: 14px;
-    width: 28px;
-    height: 28px;
-    text-align: center;
-    text-decoration: none;
-    border-radius : 50%;
+
+font-size: 20px;
+padding: 14px;
+width: 28px;
+height: 28px;
+text-align: center;
+text-decoration: none;
+border-radius : 50%;
+transition: all 0.3s ease 0s;
+
 }
 
 .fa-graduation-cap   , .fa-briefcase{
-    background-color: #90acd1;
-  color: white;
+background-color: #90acd1;
+color: white;
+transition: all 0.3s ease 0s;
+
 } 
 
 
 .tittle {
-    padding: 40px 0 ;
-    font-size: 24px;
+font-size: 24px;
+
 }
 .container{
-    display: flex;
-    padding : 40px 24px;
-    margin: 20px 0;
-    width: 100%;
-    background-color: #f9f9ff;
-    border-radius : 10px;
+display: flex;
+padding : 40px 24px;
+margin: 30px 0;
+width: 100%;
+background-color: #f9f9ff;
+border-radius : 10px;
 transition: all 0.3s ease 0s;
 
 }
 .container:hover {
-    background-color:#90acd1;
+background-color:#90acd1;
 transition: all 0.3s ease 0s;
-    
+
 }
 .container:hover .fa {
-    background-color:white;
+background-color:white;
 transition: all 0.3s ease 0s;
-    
+
 }
 .container:hover .fa-graduation-cap   {
-    color:black;
-    transition: all 0.3s ease 0s;
-    
+color:black;
+transition: all 0.3s ease 0s;
+
 }
 
 .container:hover  .fa-briefcase {
-    color:black;
-    transition: all 0.3s ease 0s;
-    
+color:black;
+transition: all 0.3s ease 0s;
+
 }
 
 .container:hover > div:nth-child(2) > h4 ,
 .container:hover > div:nth-child(2) > h5 ,
 .container:hover > div:nth-child(2) > p {
     color:white;
-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 
 }
 .container:hover > {
 background-color:#90acd1;
 }
 .container > div {
-    padding :0 12px;
+padding :0 12px;
 }
 .container > div:nth-child(2) > * {
-    padding: 5px 0;
+padding: 5px 0;
 }
 .container-resume{
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 
 }
 .wrapper{
-        padding: 100px 0;
+padding: 100px 0;
 }
 .wrapper > h1{
-    text-align: center;
-    font-size:45px;
+text-align: center;
+font-size:45px;
 }
 .resume::before{
 width: 100px;
@@ -190,50 +202,50 @@ height: 10px;
 border-radius: 8px;
 }
 .sides-container{
-    width: 75%;
-    display: flex ;
-    justify-content: space-between;
-    margin-top: 100px;
+width: 75%;
+display: flex ;
+justify-content: space-between;
+margin-top: 100px;
 }
 
 .resume-left{
-    width: 30%;
-    font-weight: 400;
+width: 30%;
+font-weight: 400;
 }
 ul{
-    list-style: none;
+list-style: none;
 transition: all 0.3s ease 0s;
 
 }
 li{
-    font-weight: 700;
+font-weight: 700;
 margin-bottom: 10px;
 transition: all 0.3s ease 0s;
 
 }
 .resume-right{
-        width: 70%;
-        display: block;
+width: 70%;
+display: block;
 }
 .current{
-    margin-left: 25px;
-    color:#90acd1 ;
-    transition: all 0.3s ease 0s;
+margin-left: 25px;
+color:#90acd1 ;
+transition: all 0.3s ease 0s;
 
 }
 
 .current::before {
-    position: absolute;
-    margin-top:13.5px;
-    width: 20px;
-    height: 2px;
-    content: "";
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    transform: translatex(-25px);
-    background: #90acd1;
-    transition: all 0.3s ease 0s;
+position: absolute;
+margin-top:13.5px;
+width: 20px;
+height: 2px;
+content: "";
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+transform: translatex(-25px);
+background: #90acd1;
+transition: all 0.3s ease 0s;
 
 }
 
