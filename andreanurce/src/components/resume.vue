@@ -202,7 +202,6 @@ transition: all 0.3s ease 0s;
 .container:hover  .fa-briefcase {
 color:black;
 transition: all 0.3s ease 0s;
-
 }
 
 .container:hover > div:nth-child(2) > h4 ,
