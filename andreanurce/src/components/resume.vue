@@ -69,7 +69,7 @@ export default {
                     description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
             }
             ],
-            skills : ["Photoshop" ,"Illustrator" , "HTML/Css" , "Javascript" , "Vue.js","Node/Express" , "Git" , "Heroku" ,"MongoDB"],
+            skills : ["Photoshop" ,"Illustrator" , "HTML/CSS" , "Javascript" , "Vue.js","Node/Express" , "Git" , "Heroku" ,"MongoDB"],
             skillLevel : ["75%","90%","85%","75%","65%" , "50%" , "75%" , "65%" , "50%"]
 }
 
@@ -234,13 +234,12 @@ padding: 100px 0;
 text-align: center;
 font-size:45px;
 }
+
 .resume::before{
 width: 100px;
 height: 2px;    
 content: "";
 left: 50%;
--webkit-transform: translateX(-50%);
--ms-transform: translateX(-50%);
 transform: translateX(-50%);
 background: #e45447;
 position: absolute;
@@ -249,12 +248,9 @@ margin-top: 100px;
 .resume::after{
 content: "";
 position: absolute;
-left: 50%;
--webkit-transform: translateX(-50%);
--ms-transform: translateX(-50%);
-transform: translateX(-50%);
+left: 48%;
 background: #e45447;
-margin-top: 95px;
+margin-top: 96px;
 width: 10px;
 height: 10px;
 border-radius: 8px;
