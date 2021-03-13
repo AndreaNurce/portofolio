@@ -28,8 +28,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="skills-wrapper">
                     <h1 class="tittle" >Skills</h1>
+                <div class="skills-wrapper">
+                    <div class="skills-container">
+                        <div class="skill-level">
+                        <p  >Photoshop</p>
+                        <p>80%</p>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width:80%;">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill-level">
+                        <p  >Photoshop</p>
+                        <p>70%</p>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width:70%;">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,6 +89,44 @@ export default {
 </script>
 
 <style scoped>
+.skill-level{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.progress-bar{
+        height: 6px;
+    background-color: #90acd1;
+    border-radius: 6px;
+      position: relative;
+}
+.progress-bar::after{
+margin-top:-2px;
+position: absolute;
+width: 10px;
+height: 10px;
+content: "";
+background: #90acd1;
+border-radius: 11px;
+right: 0;
+
+
+}
+.progress-bar-wrapper{
+    height: 6px;
+    background-color: #e6e6e6;
+    border-radius: 6px;
+}
+.skills-container{
+    width: 44%;
+    margin-right: 6%;
+    
+}
+.skills-wrapper{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
 
 .content{
 width : 70%;
@@ -120,7 +182,7 @@ font-size: 24px;
 display: flex;
 padding : 40px 24px;
 margin: 30px 0;
-width: 100%;
+width: 90%;
 background-color: #f9f9ff;
 border-radius : 10px;
 transition: all 0.3s ease 0s;
@@ -224,7 +286,7 @@ transition: all 0.3s ease 0s;
 
 }
 .resume-right{
-width: 70%;
+width: 100%;
 display: block;
 }
 .current{
