@@ -6,7 +6,8 @@
       <div class="wrapper">
       <div class="img-wrapper">
           <div  :key="index" v-for="(item,index) in  items" class="img-container">
-             <div class="image" :style="{backgroundImage: 'url('+require('../assets/'+item)+')'}"></div>
+              <h2>{{tittle[index]}}</h2>
+            <a :href="url[index]" target="_blank" rel="noopener noreferrer"> <div class="image" :style="{backgroundImage: 'url('+require('../assets/'+item)+')'}"></div></a>
       </div>
       </div>
   </div>
@@ -17,8 +18,10 @@
 export default {
     data() {
         return {
+            tittle : ["Full Stack To-Do" , "Blog", "Monster Game" , "Dice Game"],
             items : ["project3.png","project2.png","project1.png","project0.png"],
-            
+            url : ["https://full-stack-to-do.herokuapp.com/","https://andreanurce.github.io/blogHosted/","https://andreanurce.github.io/monster-game/","https://andreanurce.github.io/Dice-game/"]
+
         }
     },
 
@@ -40,7 +43,8 @@ a{
     text-decoration: none;
     color: white;
     font-weight: 900;
-
+    text-decoration-line: none;
+    text-decoration: none;
 }
 
 .wrapper{
@@ -61,9 +65,15 @@ a{
 .img-container{
     transition: all 0.3s ease 0s;
     position: relative;
+    padding: 30px;
 }
-.img-container {
-padding: 30px;
+.img-container > h2 {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 24px;
+    padding : 20px 0 ;
+}
+a{
+    position : relative
 }
 .image{
     width : 350px;
@@ -96,19 +106,18 @@ position: absolute;
 width: 100%;
 height: 100%;
 background-color: #e45447;
-opacity: .8;
-z-index: -1;
+opacity: 0;
 right: 0;
 top: 0;
 transition: all 0.3s ease 0s;
-
+z-index: 1  ;
 
 }
 .image:hover::before{
 right: -30px;
 top: 30px;
-z-index: 1;
 transition: all 0.3s ease 0s;
+opacity: .8;
 
 }
 .image:hover::after{
