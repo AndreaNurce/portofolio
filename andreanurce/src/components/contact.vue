@@ -1,0 +1,146 @@
+<template>
+<div>
+          <h1 class="tittle">
+          Contact Me
+      </h1>
+  <div class="contact-section">
+
+        <div class="section-wrapper">
+            <div class="container-left">
+                <div class="container">
+                <i class="fa-border-icon  fas fa-envelope-open-text"></i>
+                <div class="content">
+                    <h4>Email</h4>
+                    <br> 
+                    <p>nurceandrea2@gmail.com</p>
+                </div>
+            </div>
+            <div class="container">
+                <i class="fa-border-icon  fas fa-mobile-alt"></i>
+                <div class="content">
+                    <h4>Phone</h4>
+                    <br>
+                    <p>111-2222-333</p>
+                </div>
+                
+            </div>
+                <div class="container">
+                    <i class="fa-border-icon  fab fa-github"></i>
+                <div class="content">
+                    <h4>Github</h4>
+                    <br>
+                    <p>@AndreaNurce</p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="container-right">
+                <h1>asfddf</h1>
+          </div>
+      </div>
+  </div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+
+<style scoped>
+
+.tittle{
+color: #222222;
+font-weight: 700;
+position: relative;
+font-size: 45px;
+line-height: 44px;
+text-align: center;
+margin-bottom: 70px;
+padding : 60px 0;
+
+}
+
+.tittle::before{
+width: 100px;
+height: 2px;    
+content: "";
+left: 50%;
+transform: translateX(-50%);
+background: #e45447;
+position: absolute;
+margin-top: 100px;
+}
+.tittle::after{
+content: "";
+position: absolute;
+right: 46.5%;
+background: #e45447;
+margin-top: 96px;
+width: 10px;
+height: 10px;
+border-radius: 8px;
+}
+.container-right , .container-left{
+    width : 50%;
+    position: relative;
+}
+.section-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+.fa-border-icon {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e45447;
+    border-image: initial;
+    border-radius: 50% 50% 50% 50%; 
+    padding: 6% 9% 6% 9%; 
+}
+
+.container {
+    display: flex;
+    align-items: center ;
+    padding: 10px 0;
+}
+.container > div {
+    padding: 0 25px;
+}
+.container > h4 {
+    font-family: "Poppins", sans-serif;
+color: #222222;
+font-weight: 400;
+line-height: 1.5;
+}
+.container > .content > p {
+font-family: "Roboto", sans-serif;
+color: #777777;
+font-size: 15px;
+font-weight: 400;
+line-height: 1.625em;
+}
+.fa-envelope-open-text ,.fa-mobile-alt ,.fa-github{
+color: black;
+
+transition: all 0.3s ease 0s;
+border-radius: 20px;
+}
+.fas , .fab{
+font-size: 20px;
+padding: 14px;
+width: 28px;
+height: 28px;
+text-align: center;
+text-decoration: none;
+border-radius : 50%;
+transition: all 0.3s ease 0s;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+     padding : 60px 0;
+}
+</style>

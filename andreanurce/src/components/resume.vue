@@ -246,7 +246,7 @@ margin-top: 100px;
 .resume::after{
 content: "";
 position: absolute;
-left: 48%;
+left: 50%;
 background: #e45447;
 margin-top: 96px;
 width: 10px;

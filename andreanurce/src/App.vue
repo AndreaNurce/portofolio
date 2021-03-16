@@ -6,6 +6,7 @@
     <about/>
     <resume/>
     <projects/>
+    <contact/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import services from './components/services'
 import About from './components/about'
 import resume from './components/resume'
 import projects from './components/projects'
+import contact from './components/contact'
 
 
 export default {
@@ -25,7 +27,8 @@ export default {
     services,
     About,
     resume,
-    projects
+    projects,
+    contact
   }
 }
 </script>
