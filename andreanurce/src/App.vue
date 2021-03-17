@@ -7,6 +7,7 @@
     <resume/>
     <projects/>
     <contact/>
+    <bottom/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import About from './components/about'
 import resume from './components/resume'
 import projects from './components/projects'
 import contact from './components/contact'
+import bottom from './components/bottom.vue'
 
 
 export default {
@@ -28,7 +30,8 @@ export default {
     About,
     resume,
     projects,
-    contact
+    contact,
+    bottom
   }
 }
 </script>
