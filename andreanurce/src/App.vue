@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div @click="scroll()" class="navigation">
+    <div @click="scroll()"  class="navigation">
       <i class="fas fa-chevron-up"></i>
     </div>
     <home/>
@@ -38,11 +38,12 @@ export default {
   },methods: {
     scroll : ()=>{
       window.scroll({
-  top: 0,
-  behavior: 'smooth'
-});
+      top: 0,
+      behavior: 'smooth'
+      });
+
     }
-  },
+  }
 }
 </script>
 

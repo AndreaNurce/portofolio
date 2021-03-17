@@ -1,5 +1,6 @@
 <template>
-  <div class="main-bar" >
+
+  <div id="main-bar" class="main-bar" >
       <div class="nav-bar" >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
           <ul>
@@ -13,6 +14,7 @@
           </ul>
       </div>
   </div>
+
 </template>
 
 <script>
@@ -22,12 +24,33 @@ export default {
             tag : "Home"
         }
     },
+       methods: {
+    handleScroll () {
+        if(window.pageYOffset > 135){
+            document.querySelector('#main-bar').style.position = "fixed";
+            document.querySelector('#main-bar').style.backgroundColor = "white";
+            document.querySelector('#main-bar').style.boxShadow = " 0px 0px 40px 0px rgba(85, 128, 255, 0.2)";
+        }else{
+            document.querySelector('#main-bar').style.position = "absolute";
+            document.querySelector('#main-bar').style.backgroundColor = "#F9F9FF";
+            document.querySelector('#main-bar').style.boxShadow = "none";
+        }
+    }
+  },mounted () {
+    window.addEventListener('scroll', this.handleScroll);
+  
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  }
 }
 </script>
 
 <style scoped>
+
 .main-bar{
-    position:absolute;
+    position:fixed;
     top: 0;
     z-index: 1;
     width: 100% ;
@@ -35,7 +58,10 @@ export default {
    display: flex;
    justify-content: center;
    background-color: #F9F9FF;
+    transition: all 0.5s ease 0s;
+
 }
+
 .nav-bar{
     display: flex;
     align-items: center;

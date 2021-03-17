@@ -1,5 +1,5 @@
 <template>
-  <div class="container-home" >
+  <div v-on:scroll.passive="evetScroller()" class="container-home" >
       <div class="sides-container">
         <div class="home-left">
             <h3>H E Y ! I  A M</h3>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
 export default {
 
 }
