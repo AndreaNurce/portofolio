@@ -43,80 +43,75 @@
                <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
                 <div class="button" >Send a Message Now</div>
                 </div>
-          </div>
-      </div>
+        </div>
+    </div>
   </div>
-  </div>
+</div>
 </template>
-
 <script>
 export default {
-
 }
 </script>
-
-
 <style scoped>
 .button{
-    display: flex;
-    padding: 12px 24px;
-    background-color: #e45447;
-    width: 183px;
-    border-radius: 50px;
-    color: white;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
+display: flex;
+padding: 12px 24px;
+background-color: #e45447;
+width: 183px;
+border-radius: 50px;
+color: white;
+font-weight: 400;
+cursor: pointer;
+transition: all 0.3s ease 0s;
 }
 .button:hove{
-    background-color: #90acd1;
-    transition: all 0.3s ease 0s;
+background-color: #90acd1;
+transition: all 0.3s ease 0s;
 }
 .head-container{
-    width: 100%;
+width: 100%;
 }
 .bottom-container{
-    width: 100%;
+width: 100%;
 }
 .head-container > *{
-    width : calc(50% - 25px);
-    font-size: 16px;
-    padding: 16px 0px 16px 14px;
-    margin: 16px 0px 16px 0px;
-    border-radius: 50px;
-    border: 2px solid gray;
-    outline: none;
+width : calc(50% - 25px);
+font-size: 16px;
+padding: 16px 0px 16px 14px;
+margin: 16px 0px 16px 0px;
+border-radius: 50px;
+border: 2px solid gray;
+outline: none;
 transition: all 0.3s ease 0s;
 }
 textarea{
-    width :calc(100% - 25px);
-    font-size: 16px;
-    padding: 16px 0px 16px 14px;
-    margin: 16px 0px 32px 0px;
-    border-radius: 40px;
-    border: 2px solid gray;
-    outline: none;
-    transition: all 0.3s ease 0s;
-    font-family: "Roboto" , sans-serif;
+width :calc(100% - 25px);
+font-size: 16px;
+padding: 16px 0px 16px 14px;
+margin: 16px 0px 32px 0px;
+border-radius: 40px;
+border: 2px solid gray;
+outline: none;
+transition: all 0.3s ease 0s;
+font-family: "Roboto" , sans-serif;
 }
 input:focus{
-    border: 2px solid #e45447;
+border: 2px solid #e45447;
 transition: all 0.3s ease 0s;
 }
 textarea:focus{
-    border: 2px solid #e45447;
+border: 2px solid #e45447;
 transition: all 0.3s ease 0s;
 }
 .discussion-tittle {
-    width :calc(100% - 25px);
-    font-size: 16px;
-    padding: 16px 0px 16px 14px;
-    margin: 16px 0px 16px 0px;
-    border-radius: 50px;
-    border: 2px solid gray;
-    outline: none;
-    transition: all 0.3s ease 0s;
+width :calc(100% - 25px);
+font-size: 16px;
+padding: 16px 0px 16px 14px;
+margin: 16px 0px 16px 0px;
+border-radius: 50px;
+border: 2px solid gray;
+outline: none;
+transition: all 0.3s ease 0s;
 }
 .tittle{
 font-weight: 700;
@@ -126,9 +121,7 @@ line-height: 44px;
 text-align: center;
 margin-bottom: 70px;
 padding : 60px 0;
-
 }
-
 .tittle::before{
 width: 100px;
 height: 2px;    
@@ -151,33 +144,32 @@ right: calc(50% - 50px);
 transform: translateX(50%);
 }
 .container-right , .container-left{
-    width : 50%;
-    position: relative;
+width : 50%;
+position: relative;
 }
 .section-wrapper{
-    display: flex;
-    justify-content: center;
-    width: 80%;
+display: flex;
+justify-content: center;
+width: 80%;
 }
 .fa-border-icon {
-    border-width: 2px;
-    border-style: solid;
-    border-color: #e45447;
-    border-image: initial;
-    border-radius: 50% 50% 50% 50%; 
-    padding: 6% 9% 6% 9%; 
+border-width: 2px;
+border-style: solid;
+border-color: #e45447;
+border-image: initial;
+border-radius: 50% 50% 50% 50%; 
+padding: 6% 9% 6% 9%; 
 }
-
 .container {
-    display: flex;
-    align-items: center ;
-    padding: 10px 0;
+display: flex;
+align-items: center ;
+padding: 10px 0;
 }
 .container > div {
-    padding: 0 25px;
+padding: 0 25px;
 }
 .container > h4 {
-    font-family: "Poppins", sans-serif;
+font-family: "Poppins", sans-serif;
 color: #222222;
 font-weight: 400;
 line-height: 1.5;
@@ -191,7 +183,6 @@ line-height: 1.625em;
 }
 .fa-envelope-open-text ,.fa-mobile-alt ,.fa-github{
 color: black;
-
 transition: all 0.3s ease 0s;
 border-radius: 20px;
 }
@@ -206,8 +197,8 @@ border-radius : 50%;
 transition: all 0.3s ease 0s;
 }
 .contact-section{
-    display: flex;
-    justify-content: center;
-     padding : 60px 0;
+display: flex;
+justify-content: center;
+padding : 60px 0;
 }
 </style>

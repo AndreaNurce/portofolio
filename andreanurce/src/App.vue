@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div @click="scroll()" class="navigation">
+      <i class="fas fa-chevron-up"></i>
+    </div>
     <home/>
     <navBar/>
     <services/>
@@ -32,10 +35,30 @@ export default {
     projects,
     contact,
     bottom
-  }
+  },methods: {
+    scroll : ()=>{
+      window.scroll({
+  top: 0,
+  behavior: 'smooth'
+});
+    }
+  },
 }
 </script>
 
-<style>
+<style scoped>
+.fas{
+  color: white;
+  font-size: 32px;
+  background-color:#90acd1;
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  padding: 8px 10px;
+  border-radius:509px;
+}
+
 
 </style>
