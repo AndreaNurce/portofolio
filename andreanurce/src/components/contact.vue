@@ -66,6 +66,12 @@ export default {
     color: white;
     font-weight: 400;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+.button:hover{
+    background-color: #90acd1;
+    transition: all 0.3s ease 0s;
 }
 .head-container{
     width: 100%;
