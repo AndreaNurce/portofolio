@@ -35,7 +35,13 @@
             </div>
             </div>
             <div class="container-right">
-                <h1>asfddf</h1>
+                <div class="head-container">
+               <input type="text" name="" placeholder="Enter youe name" id=""> <input type="email" value="">
+               </div>
+               <div class="bottom-container">
+               <input type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" id=""><br>
+               <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
           </div>
       </div>
   </div>
@@ -50,7 +56,50 @@ export default {
 
 
 <style scoped>
-
+.head-container{
+    width: 100%;
+}
+.bottom-container{
+    width: 100%;
+}
+.head-container > *{
+    width : calc(50% - 20px);
+    font-size: 16px;
+    padding: 16px 0px 16px 14px;
+    margin: 16px 0px 16px 0px;
+    border-radius: 50px;
+    border: 2px solid gray;
+    outline: none;
+transition: all 0.3s ease 0s;
+}
+textarea{
+    width :calc(100% - 15px);
+    font-size: 16px;
+    padding: 16px 0px 16px 14px;
+    margin: 16px 0px 16px 0px;
+    border-radius: 40px;
+    border: 2px solid gray;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
+input:focus{
+    border: 2px solid #e45447;
+transition: all 0.3s ease 0s;
+}
+textarea:focus{
+    border: 2px solid #e45447;
+transition: all 0.3s ease 0s;
+}
+.discussion-tittle {
+    width :calc(100% - 15px);
+    font-size: 16px;
+    padding: 16px 0px 16px 14px;
+    margin: 16px 0px 16px 0px;
+    border-radius: 50px;
+    border: 2px solid gray;
+    outline: none;
+    transition: all 0.3s ease 0s;
+}
 .tittle{
 color: #222222;
 font-weight: 700;
@@ -90,7 +139,7 @@ border-radius: 8px;
 .section-wrapper{
     display: flex;
     justify-content: center;
-    width: 75%;
+    width: 80%;
 }
 .fa-border-icon {
     border-width: 2px;
