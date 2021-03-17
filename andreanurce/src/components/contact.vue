@@ -69,7 +69,7 @@ export default {
     transition: all 0.3s ease 0s;
 
 }
-.button:hover{
+.button:hove{
     background-color: #90acd1;
     transition: all 0.3s ease 0s;
 }
@@ -80,7 +80,7 @@ export default {
     width: 100%;
 }
 .head-container > *{
-    width : calc(50% - 20px);
+    width : calc(50% - 25px);
     font-size: 16px;
     padding: 16px 0px 16px 14px;
     margin: 16px 0px 16px 0px;
@@ -90,7 +90,7 @@ export default {
 transition: all 0.3s ease 0s;
 }
 textarea{
-    width :calc(100% - 15px);
+    width :calc(100% - 25px);
     font-size: 16px;
     padding: 16px 0px 16px 14px;
     margin: 16px 0px 32px 0px;
@@ -109,7 +109,7 @@ textarea:focus{
 transition: all 0.3s ease 0s;
 }
 .discussion-tittle {
-    width :calc(100% - 15px);
+    width :calc(100% - 25px);
     font-size: 16px;
     padding: 16px 0px 16px 14px;
     margin: 16px 0px 16px 0px;
