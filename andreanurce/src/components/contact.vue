@@ -36,11 +36,12 @@
             </div>
             <div class="container-right">
                 <div class="head-container">
-               <input type="text" name="" placeholder="Enter youe name" id=""> <input type="email" value="">
+               <input type="text" name="" placeholder="Enter your name" id=""> <input type="email" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
                <input type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" id=""><br>
-               <textarea name="" id="" cols="30" rows="10"></textarea>
+               <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                <div class="button" >Send a Message Now</div>
                 </div>
           </div>
       </div>
@@ -56,6 +57,16 @@ export default {
 
 
 <style scoped>
+.button{
+    display: flex;
+    padding: 12px 24px;
+    background-color: #e45447;
+    width: 183px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
 .head-container{
     width: 100%;
 }
@@ -76,11 +87,12 @@ textarea{
     width :calc(100% - 15px);
     font-size: 16px;
     padding: 16px 0px 16px 14px;
-    margin: 16px 0px 16px 0px;
+    margin: 16px 0px 32px 0px;
     border-radius: 40px;
     border: 2px solid gray;
     outline: none;
     transition: all 0.3s ease 0s;
+    font-family: "Roboto" , sans-serif;
 }
 input:focus{
     border: 2px solid #e45447;
@@ -101,7 +113,6 @@ transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
 .tittle{
-color: #222222;
 font-weight: 700;
 position: relative;
 font-size: 45px;
@@ -123,14 +134,15 @@ position: absolute;
 margin-top: 100px;
 }
 .tittle::after{
-content: "";
-position: absolute;
-right: 46.5%;
-background: #e45447;
 margin-top: 96px;
 width: 10px;
 height: 10px;
 border-radius: 8px;
+content: "";
+position: absolute; 
+background: #e45447;
+right: calc(50% - 50px);
+transform: translateX(50%);
 }
 .container-right , .container-left{
     width : 50%;
