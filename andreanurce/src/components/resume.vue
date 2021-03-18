@@ -4,15 +4,15 @@
     <div class="container-resume" >
         <div class="sides-container">
             <div class="resume-left">
-                <ul>
-                    <li >Education</li>
-                    <li class="current">Experience</li>
-                    <li>Skills</li>
+                <ul class="list">
+                    <li :class="{current : tag == 'Education'}" >Education</li>
+                    <li :class="{current : tag == 'Experience'}">Experience</li>
+                    <li :class="{current : tag == 'Skills'}" >Skills</li>
                 </ul>
             </div>
 
             <div class="resume-right">
-                <div :key="index" v-for="(current, index) in info" >
+                <div :key="index" v-for="(current, index) in info" :id="info[index].tittle">
                     <h1 class="tittle">{{info[index].tittle}}</h1>
                     <div :key="index2" v-for="(current2, index2) in info[index].year" class="container">
                         <div class="logo">
@@ -36,7 +36,6 @@
                         </div>
                         <div class="progress-bar-wrapper">
                             <div class="progress-bar" :style="{width:skillLevel[index]}">
-                                
                             </div>
                         </div>
                     </div>
@@ -69,14 +68,43 @@ export default {
             }
             ],
             skills : ["Photoshop" ,"Illustrator" , "HTML/CSS" , "Javascript" , "Vue.js","Node/Express" , "Git" , "Heroku" ,"MongoDB"],
-            skillLevel : ["75%","90%","85%","75%","65%" , "50%" , "75%" , "65%" , "50%"]
+            skillLevel : ["75%","90%","85%","75%","65%" , "50%" , "75%" , "65%" , "50%"],
+            tag : ''
 }
 
     },
         mounted() {
-        this.$store.state.resume = this.$el.getBoundingClientRect().top;
+        this.$store.state.resume = this.$el.offsetTop;
 
-    },
+    },methods: {
+
+        handleScroll(){
+            
+        let education = document.querySelector('#Education').offsetHeight;
+        let expreience = document.querySelector('#Experience').offsetHeight + education;
+
+    
+        if(window.pageYOffset > this.$store.state.resume  && window.pageYOffset < (this.$store.state.resume + education )){
+                this.tag = 'Education';
+        }else if(window.pageYOffset > (this.$store.state.resume + education) && window.pageYOffset < (this.$store.state.resume + expreience )){
+                this.tag = 'Experience';
+        }else if(window.pageYOffset > (this.$store.state.resume + expreience )){
+                this.tag = 'Skills';
+        }
+         else{
+                this.tag = '';
+        }
+
+    
+}
+        
+    },created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+    destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  }
 }
 </script>
 
@@ -227,6 +255,7 @@ padding: 5px 0;
 .container-resume{
 display: flex;
 justify-content: center;
+position: relative;
 
 }
 .wrapper{
@@ -269,7 +298,9 @@ width: 30%;
 font-weight: 400;
 padding: 20px 0;
 }
-ul{
+.list{
+position: sticky;
+top :150px;
 list-style: none;
 transition: all 0.3s ease 0s;
 

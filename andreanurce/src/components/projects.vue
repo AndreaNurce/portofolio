@@ -24,7 +24,7 @@ export default {
 
         }
     },  mounted() {
-        this.$store.state.projects = this.$el.getBoundingClientRect().top;
+        this.$store.state.projects = this.$el.offsetTop ;
     },
 
 }

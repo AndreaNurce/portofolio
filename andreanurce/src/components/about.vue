@@ -25,7 +25,7 @@
 export default {
 
     mounted() {
-        this.$store.state.about = this.$el.getBoundingClientRect().top;
+        this.$store.state.about = this.$el.offsetTop;
     },
 
 }

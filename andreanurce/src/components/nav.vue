@@ -27,7 +27,6 @@ export default {
         scrollToTag  (el){
             this.tag = el;
             let pos =  eval('this.$store.state.'+el )
-            console.log(pos);
             window.scrollTo({
                 top : pos,
                 behavior : 'smooth'

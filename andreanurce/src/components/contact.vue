@@ -51,7 +51,7 @@
 <script>
 export default {
         mounted() {
-        this.$store.state.contact = this.$el.getBoundingClientRect().top - 200;
+        this.$store.state.contact = this.$el.offsetTop -200;
     },
 }
 </script>

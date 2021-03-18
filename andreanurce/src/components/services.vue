@@ -31,7 +31,7 @@ export default {
     items: [1,2,3,4]
   }
 },    mounted() {
-        this.$store.state.services = this.$el.getBoundingClientRect().top;
+        this.$store.state.services = this.$el.offsetTop;
 
     },
 }

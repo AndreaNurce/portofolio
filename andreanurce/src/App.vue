@@ -46,7 +46,6 @@ export default {
 
   ,
     handleScroll () {
-       console.log('hello');
        if(window.pageYOffset > 500){
           document.querySelector('.fas').style.display = 'block'
        }else {
@@ -55,7 +54,6 @@ export default {
 }}
   ,created () {
     window.addEventListener('scroll', this.handleScroll);
-    this.handleScrol();
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
