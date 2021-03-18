@@ -19,7 +19,9 @@
 <script>
 
 export default {
-
+    mounted() {
+        this.$store.state.home = this.$el.getBoundingClientRect().top;
+    },
 }
 </script>
 

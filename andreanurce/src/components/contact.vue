@@ -36,10 +36,10 @@
             </div>
             <div class="container-right">
                 <div class="head-container">
-               <input type="text" name="" placeholder="Enter your name" id=""> <input type="email" placeholder="Enter your email" value="">
+               <input type="text" name="" placeholder="Enter your name" > <input type="email" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
-               <input type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" id=""><br>
+               <input type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
                <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
                 <div class="button" >Send a Message Now</div>
                 </div>
@@ -50,6 +50,9 @@
 </template>
 <script>
 export default {
+        mounted() {
+        this.$store.state.contact = this.$el.getBoundingClientRect().top;
+    },
 }
 </script>
 <style scoped>
@@ -119,7 +122,6 @@ position: relative;
 font-size: 45px;
 line-height: 44px;
 text-align: center;
-margin-bottom: 70px;
 padding : 60px 0;
 }
 .tittle::before{

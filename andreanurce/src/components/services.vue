@@ -30,7 +30,10 @@ export default {
     dumbText : "A complete web app solution for business",
     items: [1,2,3,4]
   }
-}
+},    mounted() {
+        this.$store.state.services = this.$el.getBoundingClientRect().top;
+
+    },
 }
 </script>
 

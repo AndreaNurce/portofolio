@@ -72,7 +72,11 @@ export default {
             skillLevel : ["75%","90%","85%","75%","65%" , "50%" , "75%" , "65%" , "50%"]
 }
 
-    }
+    },
+        mounted() {
+        this.$store.state.resume = this.$el.getBoundingClientRect().top;
+
+    },
 }
 </script>
 

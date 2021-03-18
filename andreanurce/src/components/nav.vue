@@ -4,12 +4,12 @@
       <div class="nav-bar" >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
           <ul>
-              <a  @click="scrollToTag('Home')"  :class="{active: tag == 'Home' }"  > <li>Home</li></a>
-              <a  @click=" scrollToTag('Service')" :class="{active: tag == 'Service' }" > <li>Service</li></a>
-              <a  @click="scrollToTag('About')" :class="{active: tag == 'About' }" > <li>About</li></a>
-              <a  @click="scrollToTag('Resume')" :class="{active: tag == 'Resume' }" > <li>Resume</li></a>
-              <a  @click="scrollToTag('Works')" :class="{active: tag == 'Works' }" > <li>Works</li></a>
-              <a  @click="scrollToTag('Contact')" :class="{active: tag == 'Contact' }"  > <li>Contact</li></a>
+              <a  @click="scrollToTag('home')"  :class="{active: tag == 'home' }"  > <li>Home</li></a>
+              <a  @click=" scrollToTag('services')" :class="{active: tag == 'services' }" > <li>Service</li></a>
+              <a  @click="scrollToTag('about')" :class="{active: tag == 'about' }" > <li>About</li></a>
+              <a  @click="scrollToTag('resume')" :class="{active: tag == 'resume' }" > <li>Resume</li></a>
+              <a  @click="scrollToTag('projects')" :class="{active: tag == 'projects' }" > <li>Works</li></a>
+              <a  @click="scrollToTag('contact')" :class="{active: tag == 'contact' }"  > <li>Contact</li></a>
           </ul>
       </div>
   </div>
@@ -20,12 +20,19 @@
 export default {
     data() {
         return {
-            tag : "Home"
+            tag : "home"
         }
     },
        methods: {
         scrollToTag  (el){
             this.tag = el;
+            let pos =  eval('this.$store.state.'+el )
+            console.log(pos);
+            window.scrollTo({
+                top : pos - 100,
+                behavior : 'smooth'
+            })
+
 }
 ,
 handleScroll () {
@@ -42,7 +49,6 @@ handleScroll () {
 }
   ,mounted () {
     window.addEventListener('scroll', this.handleScroll);
-  
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);

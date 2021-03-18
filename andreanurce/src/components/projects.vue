@@ -23,6 +23,8 @@ export default {
             url : ["https://full-stack-to-do.herokuapp.com/","https://andreanurce.github.io/blogHosted/","https://andreanurce.github.io/monster-game/","https://andreanurce.github.io/Dice-game/"]
 
         }
+    },  mounted() {
+        this.$store.state.projects = this.$el.getBoundingClientRect().top;
     },
 
 }
@@ -133,6 +135,7 @@ transition: all 0.3s ease 0s;
 .projects-container{
     padding : 60px 0;
     background-color: #F9F9FF;
+    position: relative;
 }
 .projects-container > h1{
     color: #222222;
@@ -141,7 +144,7 @@ position: relative;
 font-size: 45px;
 line-height: 44px;
 text-align: center;
-margin-bottom: 70px;
+margin: 70px 0;
 } 
 .projects-container > h1::before{
 width: 100px;

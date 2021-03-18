@@ -24,6 +24,10 @@
 <script>
 export default {
 
+    mounted() {
+        this.$store.state.about = this.$el.getBoundingClientRect().top;
+    },
+
 }
 </script>
 

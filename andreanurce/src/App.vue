@@ -44,8 +44,10 @@ export default {
 
     }
 
-    
-  }
+
+  },mounted() {
+
+  },
 }
 </script>
 
