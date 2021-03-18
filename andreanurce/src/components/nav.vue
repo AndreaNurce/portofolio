@@ -29,7 +29,7 @@ export default {
             let pos =  eval('this.$store.state.'+el )
             console.log(pos);
             window.scrollTo({
-                top : pos - 100,
+                top : pos,
                 behavior : 'smooth'
             })
 
@@ -45,9 +45,25 @@ handleScroll () {
             document.querySelector('#main-bar').style.backgroundColor = "#F9F9FF";
             document.querySelector('#main-bar').style.boxShadow = "none";
         }
+
+        
+        if(window.pageYOffset +200 >= this.$store.state.home && window.pageYOffset < this.$store.state.services){
+            this.tag = 'home'
+        } if(window.pageYOffset  +200 >= this.$store.state.services && window.pageYOffset < this.$store.state.about){
+            this.tag = 'services'
+        }if(window.pageYOffset +200 >= this.$store.state.about && window.pageYOffset < this.$store.state.resume){
+            this.tag = 'about'
+        }if(window.pageYOffset  +200>= this.$store.state.resume && window.pageYOffset < this.$store.state.projects){
+            this.tag = 'resume'
+        }if(window.pageYOffset +200 >= this.$store.state.projects && window.pageYOffset < this.$store.state.contact){
+            this.tag = 'projects'
+        }if(window.pageYOffset+200 >= this.$store.state.contact){
+            this.tag = 'contact'
+        }
+
     }
 }
-  ,mounted () {
+  ,created () {
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed () {
@@ -62,7 +78,7 @@ handleScroll () {
 .main-bar{
     position:fixed;
     top: 0;
-    z-index: 1;
+    z-index: 100;
     width: 100% ;
     height: 80px;
    display: flex;

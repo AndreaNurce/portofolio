@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="margin-top:100px">
           <h1 class="tittle">
           Contact Me
       </h1>
@@ -51,7 +51,7 @@
 <script>
 export default {
         mounted() {
-        this.$store.state.contact = this.$el.getBoundingClientRect().top;
+        this.$store.state.contact = this.$el.getBoundingClientRect().top - 200;
     },
 }
 </script>
@@ -122,7 +122,7 @@ position: relative;
 font-size: 45px;
 line-height: 44px;
 text-align: center;
-padding : 60px 0;
+
 }
 .tittle::before{
 width: 100px;

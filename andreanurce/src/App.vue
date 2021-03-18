@@ -41,18 +41,33 @@ export default {
       top: 0,
       behavior: 'smooth'
       });
-
+            
     }
 
-
-  },mounted() {
-
+  ,
+    handleScroll () {
+       console.log('hello');
+       if(window.pageYOffset > 500){
+          document.querySelector('.fas').style.display = 'block'
+       }else {
+      document.querySelector('.fas').style.display = 'none'
+       }
+}}
+  ,created () {
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScrol();
   },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
+  }
 }
+
 </script>
 
 <style scoped>
 .fas{
+  display:none;
   color: white;
   font-size: 32px;
   background-color:#90acd1;
