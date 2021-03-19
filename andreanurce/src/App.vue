@@ -3,8 +3,9 @@
     <div @click="scroll()"  class="navigation">
       <i class="fas fa-chevron-up"></i>
     </div>
+    <navBar v-if="mobile"></navBar>
+    <navMobile  v-if="!mobile" />
     <home/>
-    <navBar/>
     <services/>
     <about/>
     <resume/>
@@ -23,9 +24,16 @@ import resume from './components/resume'
 import projects from './components/projects'
 import contact from './components/contact'
 import bottom from './components/bottom.vue'
+import navMobile from './components/navMobile.vue'
+
 
 
 export default {
+  data() {
+    return {
+      mobile : true 
+    }
+  },
   components :  {
     navBar,
     home,
@@ -34,7 +42,8 @@ export default {
     resume,
     projects,
     contact,
-    bottom
+    bottom,
+    navMobile,
   },methods: {
     scroll : ()=>{
       window.scroll({
@@ -51,12 +60,22 @@ export default {
        }else {
       document.querySelector('.fas').style.display = 'none'
        }
+},handleNav(){
+  if(window.innerWidth >= 768 ){
+    this.mobile = true
+  }else{
+    this.mobile = false
+  }
 }}
   ,created () {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleNav);
+    this.handleNav();
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleNav);
+
     
   }
 }

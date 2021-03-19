@@ -2,8 +2,8 @@
 
   <div id="main-bar" class="main-bar" >
       <div class="nav-bar" >
-          <img  style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
-          <i  class="fas fa-bars"></i>
+          <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
+          <i  @click="show()" class="fas fa-bars"></i>
           <ul class="list" >
               <a  @click="scrollToTag('home')"  :class="{active: tag == 'home' }"  > <li>Home</li></a>
               <a  @click=" scrollToTag('services')" :class="{active: tag == 'services' }" > <li>Service</li></a>
@@ -23,12 +23,23 @@ export default {
     data() {
         return {
             tag : "home",
-            check : false
+            check : false,
+            showKey : true,
         }
     },
        methods: {
+           show(){
+               if(this.showKey){
+            document.querySelector('.list').style.marginTop = "80px";
+            this.showKey = !this.showKey
+               }else{
+            document.querySelector('.list').style.marginTop = "-100%";
+            this.showKey = !this.showKey
+               }
+           },
 
         scrollToTag  (el){
+            this.show();
             this.tag = el;
             let pos =  eval('this.$store.state.'+el )
             window.scrollTo({
@@ -71,8 +82,6 @@ handleScroll () {
 }
   ,created () {
     window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-
   },mounted() {
     this.handleScroll();
       
@@ -85,10 +94,12 @@ handleScroll () {
 </script>
 
 <style scoped>
+.fa-bars{
+    font-size: 32px;
+}
 
 i{
     transition: all 0.5s ease 0s;
-    display: none;
 }
 
 .main-bar{
@@ -111,22 +122,36 @@ i{
     width : 80%;
    background-color: #F9F9FF;
     transition: all 0.5s ease 0s;
-
-
 }
 
 li{
+    position: relative;
     color: #222222;
     font-weight: 400;
     padding: 25px 8px;
     font-weight: 400;
-    display: inline-block;
     font-size: 16px;
     text-transform: capitalize;
     transition: all 0.3s ease 0s;
-    width: 60px;
+    width: 100%;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right : 50%;
 
+}
+
+.list{
+margin-top: -100%;
+transition: all 0.5s ease 0s;
+position: absolute;
+top : 0px;
+background-color: white;
+right: 50%;
+width : 80%;
+transform: translateX(50%);
+z-index: -1000;
+list-style: none;
 }
 ul > a {
     padding : 0 5px;
@@ -134,35 +159,8 @@ ul > a {
     transition: all 0.5s ease 0s;
     cursor : pointer;
 }
-ul > a::before{
-position: absolute;
-content: "";
-bottom: 14px;
-background: #e45447;
-height: 1px;
-width: 0px;
-height: 2px; 
-transition: all 0.3s ease 0s;
-}
-ul > a:hover::before{
-width: 84px;
-transition: all 0.3s ease 0s;
-}
 .active > li{
     font-weight: bolder;
 }
-.active::before{
-    position: absolute;
-content: "";
-bottom: 14px;
-background: #e45447;
-height: 1px;
-width: 84px;
-height: 2px; 
-transition: all 0.3s ease 0s;
- font-weight: bolder;
-}
-
-
 </style> >
 
