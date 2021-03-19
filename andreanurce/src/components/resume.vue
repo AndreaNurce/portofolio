@@ -5,9 +5,9 @@
         <div class="sides-container">
             <div class="resume-left">
                 <ul class="list">
-                    <li :class="{current : tag == 'Education'}" >Education</li>
-                    <li :class="{current : tag == 'Experience'}">Experience</li>
-                    <li :class="{current : tag == 'Skills'}" >Skills</li>
+                    <li @click="handleNav('Education')" :class="{current : tag == 'Education'}" >Education</li>
+                    <li @click="handleNav('Experience')" :class="{current : tag == 'Experience'}">Experience</li>
+                    <li @click="handleNav('Skills')" :class="{current : tag == 'Skills'}" >Skills</li>
                 </ul>
             </div>
 
@@ -77,10 +77,34 @@ export default {
         this.$store.state.resume = this.$el.offsetTop;
 
     },methods: {
+        handleNav(el){
+            let education =  this.$store.state.resume + 200;
+            let expreience = document.querySelector('#Experience').offsetHeight + education;
+            let skills =  expreience + document.querySelector('#Education').offsetHeight  ;
+            
+            if(el == 'Education'){
+                window.scrollTo({
+                    top :education,
+                    behavior : 'smooth'
+                })
+
+            }if(el == 'Experience'){
+                window.scrollTo({
+                    top :expreience,
+                    behavior : 'smooth'
+                })
+            
+            }if(el == 'Skills'){
+                window.scrollTo({
+                    top : skills,
+                    behavior : 'smooth'
+                })
+            }
+        },
 
         handleScroll(){
             
-        let education = document.querySelector('#Education').offsetHeight;
+        let education = document.querySelector('#Education').offsetHeight ;
         let expreience = document.querySelector('#Experience').offsetHeight + education;
 
     
