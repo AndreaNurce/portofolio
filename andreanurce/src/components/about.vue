@@ -2,16 +2,16 @@
   <div class="container-about" >
       <div class="sides-container">
         <div class="about-left">
-            <img src="../assets/Untitled-1.png" style="width:500px" alt="">
+            <img src="../assets/Untitled-1.png"  alt="">
         </div>
         <div class="about-right">
             <h1>About Me</h1>
             <p>I’m a Front End Developer. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code. </p>
             <ul>
-                <li><span>Name : </span> <span> Andrea Nurçe</span> </li>
+                <li><span>Name :</span> <span> Andrea Nurçe</span> </li>
                 <li><span>Date of Birth : </span> <span> August 20 ,2002</span> </li>
                 <li><span>Country : </span> <span> Albania</span> </li>
-                <li><span>Email : </span> <span> nurceandrea2@gmail.com</span>  </li>
+                <li><span>Email :</span> <span>nurceandrea2@gmail.com</span>  </li>
                 <li><span>Education : </span> <span> Student</span> </li>
             </ul>
             <div class="download"><p>Download CV</p></div>
@@ -32,11 +32,17 @@ export default {
 </script>
 
 <style scoped>
+img{
+    width: 500px;
+    transition: all 0.3s ease 0s;
+
+}
 li{
     padding: 10px 0;
     display: flex;
-    
-
+}
+ul{
+    list-style: none;
 }
 .about-right > p{
         font-family: "Roboto", sans-serif;
@@ -128,22 +134,38 @@ font-size: 45px;
 line-height: 44px;
 }
 
-.about-left>*{
-    padding: 10px 0;
-}
-.about-left>h3{
-    color:#ABD4FC;
-    font-size: 16px;
-}
-.about-left>h1{
-    font-size: 60px  ;
-}.about-left>h2{
-    font-size: 30px  ;
-    color: #e45447;
+@media screen and (max-width :1292px) {
+    img{
+        width: 400px;
+        height: auto;
+        transition: all 0.3s ease 0s;
 
-}.about-left>p{
-    font-size: 13px  ;
-    color: #777777;
+            
+    }
+}
+@media screen and (max-width :1062px) {
+    img{
+        width: 300px;
+        height: auto;
+        transition: all 0.3s ease 0s;
 
+            
+    }
+}
+@media screen and (max-width :910px) {
+.about-left{
+    display: none;
+}
+.about-right{
+    width:100%;
+}
+.sides-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    display: block;
+}
 }
 </style>
