@@ -360,5 +360,24 @@ background: #90acd1;
 transition: all 0.3s ease 0s;
 
 }
-
+@media screen and (max-width :735px ) {
+    .resume-left{
+        display: none;
+    }
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+}
+@media screen and (max-width :568px ) {
+.skills-wrapper{
+    flex-direction: column;
+    align-items: center;
+}
+.skills-container{
+    width: 100%;
+}
+}
 </style>
