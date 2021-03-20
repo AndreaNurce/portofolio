@@ -46,7 +46,8 @@ export default {
   grid-template-rows: auto auto;
   column-gap: 40px;
   row-gap: 40px;
-  justify-content: center;
+    justify-content: center;
+  align-content: center;
 
 }
 .containerWrapper > :nth-child(2) {
@@ -83,7 +84,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: url(../assets/bg-half.png) no-repeat;
     background-position: bottom right ;
     background-position-y: -20%;
@@ -92,12 +92,12 @@ export default {
 .sides-container{
     width: 75%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 100px 0;
 }
 .services-left{
-    width: 400px;
+    width: 50%;
     font-weight: 400;
 }
 .services-left > h5{
@@ -121,11 +121,138 @@ line-height: 1.625em;
 
 
 .services-right{
-    width: 600px;
+        width: 50%;
+        display: flex;
+        
+
 }
 .services-left > *{
     padding: 10px 0;
  }
+@media screen and (max-width : 1380px) {
+    .container{
+  padding: 30px 30px;
+  width: 200px ;
+  transition: all 0.6s ease-in-out;
+
+}
+}
+
+@media screen and (max-width : 1175px) {
+    .container{
+  padding: 30px 30px;
+  width: 150px ;
+  transition: all 0.6s ease-in-out;
+
+}
+
+.container > p {
+  padding: 10px 0;
+  color : gray;
+  font-family:  " Roboto", sans-serif;
+  font-size: 14px;
+}
+.container > h2 {
+  color : black;
+  font-size: 18px;
+
+}
+.container > img{
+  height : 45px;
+  padding : 15px;
+}
+.services-left > h1{
+    color: #222222;
+    line-height: 1.5;
+    font-size:35px;
+}
+}
+
+@media screen and (max-width : 954px) {
+
+  .sides-container{
+    display: flex;
+    flex-direction: column;
+}
+.services-left , .services-right {
+  width: 100%;
+}
+
+.container{
+  margin-top: 70px;
+  overflow: hidden;
+  padding: 50px 40px;
+  width: 240px ;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgba(85, 128, 255, 0.2);
+  z-index: 2;
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+}
+.container > p {
+  padding: 10px 0;
+  color : gray;
+  font-family:  " Roboto", sans-serif;
+}
+.container > h2 {
+  color : black;
+}
+.container > img{
+  height : 70px;
+  padding : 15px;
+}
+}
 
 
+@media screen and (max-width : 812px) {
+    .container{
+  padding: 30px 30px;
+  width: 200px ;
+  transition: all 0.6s ease-in-out;
+
+}
+}
+@media screen and (max-width : 679px) {
+.containerWrapper{
+  display:block;
+  margin-left: auto;
+  transform: translateX(-25%);
+
+}
+.container{
+  width: 240px ;
+
+}
+
+.container > p {
+  padding: 10px 0;
+  color : gray;
+  font-family:  " Roboto", sans-serif;
+}
+.container > h2 {
+  color : black;
+}
+.container > img{
+  height : 70px;
+  padding : 15px;
+}
+.containerWrapper > :nth-child(3) {
+  margin-top : 0;
+}
+}
+@media screen and (max-width : 454px) {
+
+  .containerWrapper{
+  display:block;
+  transform: translateX(0%);
+
+}
+
+.container{
+  width: 200px ;
+}
+
+
+}
 </style>
