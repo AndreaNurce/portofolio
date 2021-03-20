@@ -4,7 +4,6 @@
           Contact Me
       </h1>
   <div class="contact-section">
-
         <div class="section-wrapper">
             <div class="container-left">
                 <div class="container">
@@ -14,7 +13,7 @@
                     <br> 
                     <p>nurceandrea2@gmail.com</p>
                 </div>
-            </div>
+                </div>
             <div class="container">
                 <i class="fa-border-icon  fas fa-mobile-alt"></i>
                 <div class="content">
@@ -203,4 +202,17 @@ display: flex;
 justify-content: center;
 padding : 60px 0;
 }
+@media screen and (max-width : 895px) {
+    .section-wrapper{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+textarea,.discussion-tittle,.head-container > *{
+width :100%;
+}
+.head-container > *{
+width : 100%;}
+}
+
 </style>
