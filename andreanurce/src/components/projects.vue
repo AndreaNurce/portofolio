@@ -47,6 +47,8 @@ a{
     font-weight: 900;
     text-decoration-line: none;
     text-decoration: none;
+    position : relative;
+
 }
 
 .wrapper{
@@ -74,9 +76,7 @@ a{
     font-size: 24px;
     padding : 20px 0 ;
 }
-a{
-    position : relative
-}
+
 .image{
     width : 350px;
     height: 180px;
@@ -170,6 +170,21 @@ left: 50%;
 transform: translateX(-50%);
 }
 
+@media screen and (max-width : 454px) {
+    .image{
+    width : 280px;
+    height: 145px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 0px 40px 0px rgba(85, 128, 255, 0.2);
+    position: relative; 
+    background-size: cover ;
+}
 
+.img-wrapper{
+width: 100%;
+
+}
+    
+}
 
 </style>
