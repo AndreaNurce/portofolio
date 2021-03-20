@@ -61,6 +61,7 @@ export default {
       document.querySelector('.fas').style.display = 'none'
        }
 },handleNav(){
+  console.log(window.innerWidth);
   if(window.innerWidth >= 768 ){
     this.mobile = true
   }else{
@@ -95,7 +96,9 @@ export default {
   margin: 20px;
   padding: 8px 10px;
   border-radius:509px;
+  transition: all 0.3s ease 0s;
 }
+
 
 
 </style>

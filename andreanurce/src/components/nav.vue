@@ -71,7 +71,6 @@ handleScroll () {
 }
   ,created () {
     window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
 
   },mounted() {
     this.handleScroll();
@@ -87,7 +86,7 @@ handleScroll () {
 <style scoped>
 
 i{
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
     display: none;
 }
 
@@ -100,7 +99,7 @@ i{
    display: flex;
    justify-content: center;
    background-color: #F9F9FF;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
 
 }
 

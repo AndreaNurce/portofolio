@@ -63,24 +63,99 @@ export default {
     font-weight: 400;
 }
 .home-right{
-    width: 500px;
+    width: 400px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+
 }
 .home-left>*{
     padding: 10px 0;
+    transition: all 0.3s ease 0s;
+
 }
 .home-left>h3{
     color:#ABD4FC;
     font-size: 16px;
+    transition: all 0.3s ease 0s;
+
 }
 .home-left>h1{
     font-size: 60px  ;
+    transition: all 0.3s ease 0s;
+
 }.home-left>h2{
     font-size: 30px  ;
     color: #e45447;
+    transition: all 0.3s ease 0s;
+
 
 }.home-left>p{
     font-size: 13px  ;
     color: #777777;
+    transition: all 0.3s ease 0s;
+
+
+}
+@media screen and (max-width : 1233px) {
+    
+    .home-right > img{
+    width: 500px;
+    transition: all 0.3s ease 0s;
+
+}    .home-right {
+    width: 300px;
+    transition: all 0.3s ease 0s;
+
+}
+}
+@media screen and (max-width : 1098px) {
+    
+    .home-right > img{
+    width: 350px;
+    transition: all 0.3s ease 0s;
+
+}    .home-right {
+    width: 200px;
+    transition: all 0.3s ease 0s;
+
+}
+}
+@media screen and (max-width : 966px) {
+    
+  .home-right {
+    display: none;
+    transition: all 0.3s ease 0s;
+
+}
+.sides-container{
+    justify-content:center;
+    transition: all 0.3s ease 0s;
+}
+}
+@media screen and (max-width : 698px) {
+
+.home-left>h3{
+    transition: all 0.3s ease 0s;
+    font-size: 12px;
+}
+.home-left>h1{
+    font-size: 45px  ;
+    transition: all 0.3s ease 0s;
+
+}.home-left>h2{
+    font-size: 23px  ;
+    color: #e45447;
+    transition: all 0.3s ease 0s;
+
+
+}.home-left>p{
+    font-size: 13px  ;
+    color: #777777;
+    transition: all 0.3s ease 0s;
+
+
+}
+
 
 }
 </style>

@@ -96,10 +96,12 @@ handleScroll () {
 <style scoped>
 .fa-bars{
     font-size: 32px;
+    transition: all .3s ease 0s;
+    cursor: pointer;
 }
 
 i{
-    transition: all 0.5s ease 0s;
+    transition: all .3s ease 0s;
 }
 
 .main-bar{
@@ -111,7 +113,7 @@ i{
    display: flex;
    justify-content: center;
    background-color: #F9F9FF;
-    transition: all 0.5s ease 0s;
+    transition: all .3s ease 0s;
 
 }
 
@@ -121,7 +123,7 @@ i{
     justify-content: space-between;
     width : 80%;
    background-color: #F9F9FF;
-    transition: all 0.5s ease 0s;
+    transition: all .3s ease 0s;
 }
 
 li{
@@ -143,7 +145,7 @@ li{
 
 .list{
 margin-top: -100%;
-transition: all 0.5s ease 0s;
+transition: all .3s ease 0s;
 position: absolute;
 top : 0px;
 background-color: white;
@@ -156,11 +158,13 @@ list-style: none;
 ul > a {
     padding : 0 5px;
     outline: none;
-    transition: all 0.5s ease 0s;
+    transition: all .3s ease 0s;
     cursor : pointer;
 }
 .active > li{
     font-weight: bolder;
+    transition: all .3s ease 0s;
+
 }
 </style> >
 
