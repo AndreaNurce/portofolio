@@ -31,9 +31,21 @@ export default {
     items: [1,2,3,4]
   }
 },    mounted() {
-        this.$store.state.services = this.$el.offsetTop;
+                this.handleResize();
 
-    },
+
+    },methods: {
+        handleResize(){
+      this.$store.state.services = this.$el.offsetTop;
+
+    }
+    },created () {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+    destroyed () {
+    window.addEventListener('resize', this.handleResize);
+  }
 }
 </script>
 

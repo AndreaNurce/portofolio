@@ -25,9 +25,19 @@
 export default {
 
     mounted() {
-        this.$store.state.about = this.$el.offsetTop;
+        this.handleResize();
     },
-
+    methods : {
+        handleResize(){
+        this.$store.state.about = this.$el.offsetTop;
+    }
+    },created () {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+    destroyed () {
+    window.addEventListener('resize', this.handleResize);
+  }
 }
 </script>
 

@@ -20,8 +20,18 @@
 
 export default {
     mounted() {
+                this.handleResize();
+    },methods: {
+        handleResize(){
         this.$store.state.home = this.$el.offsetTop;
-    },
+    }
+    },created () {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+    destroyed () {
+    window.addEventListener('resize', this.handleResize);
+  }
 }
 </script>
 

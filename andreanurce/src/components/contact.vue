@@ -1,5 +1,5 @@
 <template>
-<div style="margin-top:100px">
+<div class="section" style="margin-top:100px">
           <h1 class="tittle">
           Contact Me
       </h1>
@@ -50,11 +50,22 @@
 <script>
 export default {
         mounted() {
+        this.handleResize();
+    },methods: {
+        handleResize(){
         this.$store.state.contact = this.$el.offsetTop -200;
-    },
+    }
+    },created () {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+    destroyed () {
+    window.addEventListener('resize', this.handleResize);
+  }
 }
 </script>
 <style scoped>
+
 .button{
 display: flex;
 padding: 12px 24px;

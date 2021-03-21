@@ -74,9 +74,11 @@ export default {
 
     },
         mounted() {
-        this.$store.state.resume = this.$el.offsetTop;
-
+               this.handleResize();
     },methods: {
+        handleResize(){
+                this.$store.state.resume = this.$el.offsetTop;
+    },
         handleNav(el){
             let education =  this.$store.state.resume + 200;
             let expreience = document.querySelector('#Experience').offsetHeight + education;
@@ -124,9 +126,13 @@ export default {
         
     },created () {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
+
   },
     destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
+
     
   }
 }

@@ -61,7 +61,6 @@ export default {
       document.querySelector('.fas').style.display = 'none'
        }
 },handleNav(){
-  console.log(window.innerWidth);
   if(window.innerWidth >= 768 ){
     this.mobile = true
   }else{
