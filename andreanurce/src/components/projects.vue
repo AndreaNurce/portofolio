@@ -71,6 +71,8 @@ a{
 .img-wrapper{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 50px 0;
     width: 85%;
     transition: all 0.3s ease 0s;
@@ -88,8 +90,8 @@ a{
 }
 
 .image{
-    width : 350px;
-    height: 180px;
+    width : 320px;
+    height: 170px;
     transition: all 0.3s ease 0s;
     box-shadow: 0px 0px 40px 0px rgba(85, 128, 255, 0.2);
     position: relative; 
@@ -189,6 +191,7 @@ transform: translateX(-50%);
     position: relative; 
     background-size: cover ;
 }
+
 
 .img-wrapper{
 width: 100%;
