@@ -1,7 +1,7 @@
 <template>
 
-  <div id="main-bar" class="main-bar" >
-      <div class="nav-bar" >
+  <div id="main-bar" class="main-bar" data-aos-duration="900" >
+      <div class="nav-bar" data-aos="fade-down"  >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
           <i  @click="show()" class="fas fa-bars"></i>
           <ul class="list" >

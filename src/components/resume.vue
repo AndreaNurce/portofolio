@@ -14,7 +14,7 @@
             <div  class="resume-right">
                 <div :key="index" v-for="(current, index) in info" :id="info[index].tittle">
                     <h1 class="tittle">{{info[index].tittle}}</h1>
-                    <div :key="index2" v-for="(current2, index2) in info[index].year" class="container">
+                    <div data-aos="zoom-out-down" data-aos-delay="200" :key="index2" v-for="(current2, index2) in info[index].year" class="container">
                         <div class="logo">
                             <i :class="info[index].logoClass[index2]" class="fa fas"></i>
                         </div>
@@ -29,7 +29,7 @@
                 </div>
                     <h1 class="tittle" >Skills</h1>
                 <div class="skills-wrapper">
-                    <div v-for="(skill ,index) in skills" :key="index" class="skills-container">
+                    <div v-for="(skill ,index) in skills" :key="index" data-aos="fade-right"  class="skills-container">
                         <div class="skill-level" :style="{width:skillLevel[index]}">
                         <h3>{{skill}}</h3>
                         <p>{{skillLevel[index]}}</p>

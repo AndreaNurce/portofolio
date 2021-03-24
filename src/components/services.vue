@@ -1,14 +1,14 @@
 <template>
 <div class="container-services" >
     <div class="sides-container">
-        <div class="services-left">
+        <div data-aos="fade-right" class="services-left">
             <h5>MY SERVICES</h5>
             <h1>I can make this  awesome things </h1>
             <p>I understand what your business means to you,your requirements considering trends.</p>
         </div>
         <div class="services-right">
             <div class="containerWrapper" >
-                <div v-bind:key = index v-for="(item,index) in items" >
+                <div data-aos="zoom-in" v-bind:key = index v-for="(item,index) in items" >
                     <div class="container">
                         <img :src="require(`../assets/${item}.png`)" alt="">
 
