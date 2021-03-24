@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper">
-        <h1 class="resume">Resume</h1>
+        <h1 data-aos="flip-up" class="resume">Resume</h1>
     <div class="container-resume" >
         <div class="sides-container">
             <div class="resume-left">

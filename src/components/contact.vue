@@ -1,6 +1,6 @@
 <template>
 <div class="section"  >
-          <h1 class="tittle">
+          <h1 data-aos="flip-up" class="tittle">
           Contact Me
       </h1>
   <div class="contact-section">
