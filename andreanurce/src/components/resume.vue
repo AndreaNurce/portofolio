@@ -11,7 +11,7 @@
                 </ul>
             </div>
 
-            <div class="resume-right">
+            <div  class="resume-right">
                 <div :key="index" v-for="(current, index) in info" :id="info[index].tittle">
                     <h1 class="tittle">{{info[index].tittle}}</h1>
                     <div :key="index2" v-for="(current2, index2) in info[index].year" class="container">

@@ -1,10 +1,13 @@
 <template>
   <div class="container-about" >
       <div class="sides-container">
-        <div class="about-left">
+        <div data-aos="zoom-in" data-aos-duration="400"  class="about-left">
+          
             <img src="../assets/Untitled-1.png"  alt="">
+
+
         </div>
-        <div class="about-right">
+        <div data-aos="fade-left" data-aos-duration="900" class="about-right">
             <h1>About Me</h1>
             <p>I’m a Front End Developer. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code. </p>
             <ul>

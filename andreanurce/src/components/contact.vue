@@ -1,5 +1,5 @@
 <template>
-<div class="section" style="margin-top:100px">
+<div class="section"  >
           <h1 class="tittle">
           Contact Me
       </h1>
@@ -65,6 +65,9 @@ export default {
 }
 </script>
 <style scoped>
+section{
+    margin-top:100px;
+}
 
 .button{
 display: flex;

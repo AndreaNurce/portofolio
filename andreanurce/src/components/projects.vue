@@ -148,6 +148,7 @@ transition: all 0.3s ease 0s;
     padding : 60px 0;
     background-color: #F9F9FF;
     position: relative;
+
 }
 .projects-container > h1{
     color: #222222;

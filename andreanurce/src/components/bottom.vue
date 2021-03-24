@@ -76,6 +76,7 @@ opacity: .5;
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 </style>
