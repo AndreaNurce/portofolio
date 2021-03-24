@@ -2,13 +2,13 @@
   <div class="container-home" >
       <div class="sides-container">
         <div class="home-left">
-            <h3>H E Y ! I  A M</h3>
-            <h1>Andrea Nurçe !</h1>
-            <h2>I'm a Web Developer .</h2>
-            <p>Lorem ipsum dolor sit amet consectetur mollitia in ad  Minus <br>mollitia in perspiciatis ad,  fuga quidem sunt impedit </p>
-            <div class="download"><p>Download</p></div>
+            <h3 data-aos="fade-down" data-aos-duration="900">H E Y ! I  A M</h3>
+            <h1 data-aos="fade-down" data-aos-duration="800">Andrea Nurçe !</h1>
+            <h2 data-aos="fade-down" data-aos-duration="700">I'm a Web Developer .</h2>
+            <p data-aos="fade-down" data-aos-duration="600" >Lorem ipsum dolor sit amet consectetur mollitia in ad  Minus <br>mollitia in perspiciatis ad,  fuga quidem sunt impedit </p>
+            <div  class="download"><p data-aos="fade-down" data-aos-duration="600" >Download</p></div>
         </div>
-        <div class="home-right">
+        <div data-aos="zoom-out" data-aos-duration="900" class="home-right">
             <img src="../assets/hero_right.png" alt="">
         </div>
         </div>
@@ -36,6 +36,12 @@ export default {
 </script>
 
 <style scoped>
+.home-right > img{
+    width: 500px;
+    transition: all 0.3s ease 0s;
+
+}
+
 .download > p{
     margin-top:30px;
     background: #90acd1;
