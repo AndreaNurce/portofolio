@@ -1,11 +1,11 @@
 <template>
   <div class="projects-container">
-      <h1 >
+      <h1 data-aos="flip-up" >
           My Projects
       </h1>
       <div class="wrapper">
       <div class="img-wrapper">
-          <div  :key="index" v-for="(item,index) in  items" class="img-container">
+          <div  :key="index" v-for="(item,index) in  items" data-aos="zoom-in" class="img-container">
               <h2>{{tittle[index]}}</h2>
             <a :href="url[index]" target="_blank" rel="noopener noreferrer"> <div class="image" :style="{backgroundImage: 'url('+require('../assets/'+item)+')'}"></div></a>
       </div>

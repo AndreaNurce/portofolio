@@ -7,16 +7,16 @@
         <div class="section-wrapper">
             <div class="container-left">
                 <div class="container">
-                <i class="fa-border-icon  fas fa-envelope-open-text"></i>
-                <div class="content">
+                <i data-aos="zoom-in" class="fa-border-icon  fas fa-envelope-open-text"></i>
+                <div data-aos="fade-left" class="content">
                     <h4>Email</h4>
                     <br> 
                     <p>nurceandrea2@gmail.com</p>
                 </div>
                 </div>
             <div class="container">
-                <i class="fa-border-icon  fas fa-mobile-alt"></i>
-                <div class="content">
+                <i  data-aos="zoom-in" class="fa-border-icon  fas fa-mobile-alt"></i>
+                <div data-aos="fade-left" class="content">
                     <h4>Phone</h4>
                     <br>
                     <p>111-2222-333</p>
@@ -24,8 +24,8 @@
                 
             </div>
                 <div class="container">
-                    <i class="fa-border-icon  fab fa-github"></i>
-                <div class="content">
+                    <i data-aos="zoom-in" class="fa-border-icon  fab fa-github"></i>
+                <div data-aos="fade-left" class="content">
                     <h4>Github</h4>
                     <br>
                     <p>@AndreaNurce</p>
@@ -35,12 +35,12 @@
             </div>
             <div class="container-right">
                 <div class="head-container">
-               <input type="text" name="" placeholder="Enter your name" > <input type="email" placeholder="Enter your email" value="">
+               <input data-aos="fade-down" data-aos-duration="900"  type="text" name="" placeholder="Enter your name" > <input type="email" data-aos="fade-down" data-aos-duration="1000" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
-               <input type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
-               <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
-                <div class="button" >Send a Message Now</div>
+               <input data-aos="fade-down" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
+               <textarea data-aos="fade-down" data-aos-duration="1200"  name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                <div class="button" data-aos="fade-down" data-aos-duration="1300" >Send a Message Now</div>
                 </div>
         </div>
     </div>
@@ -135,6 +135,7 @@ position: relative;
 font-size: 45px;
 line-height: 44px;
 text-align: center;
+padding: 79px;
 
 }
 .tittle::before{

@@ -8,7 +8,7 @@
 
         </div>
         <div data-aos="fade-left" data-aos-duration="900" class="about-right">
-            <h1>About Me</h1>
+            <h1 data-aos="flip-up" >About Me</h1>
             <p>I’m a Front End Developer. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code. </p>
             <ul>
                 <li><span>Name :</span> <span> Andrea Nurçe</span> </li>
