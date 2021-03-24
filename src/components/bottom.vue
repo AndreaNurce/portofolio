@@ -3,9 +3,9 @@
         <img height="64px" src="../assets/logo.png" alt="">
         <h3>Follow Me</h3>
         <div class="social-media" >
-            <a href="https://www.instagram.com/anurce81/"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/AndreaNurce"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/andrea-nurce-05b08218a/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/anurce81/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/AndreaNurce"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/andrea-nurce-05b08218a/"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>With &hearts; by <span> Andrea Nurce</span></p>
     </div>
