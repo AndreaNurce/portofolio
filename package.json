@@ -22,7 +22,8 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11",
-    "ssri": ">=8.0.1"
+    "ssri": ">=8.0.1",
+    "is-svg": ">=4.2.2"
   },
   "eslintConfig": {
     "root": true,
