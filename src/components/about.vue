@@ -17,7 +17,7 @@
                 <li><span>Email :</span> <span>nurceandrea2@gmail.com</span>  </li>
                 <li><span>Education : </span> <span> Student</span> </li>
             </ul>
-            <div class="download"><p>Download CV</p></div>
+           <a href="info.txt" download="info"> <div class="download"> <p>Download CV</p> </div></a>
         </div>
         </div>
         <br>
