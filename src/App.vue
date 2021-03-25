@@ -1,5 +1,14 @@
 <template>
   <div id="app">
+    <div 
+     v-if="isLoading"
+     class="spinnerContainer">
+    <breeding-rhombus-spinner
+  :animation-duration="3000"
+  :size="200"
+  color="#90acd1"
+/></div>
+<div v-if="!isLoading" >
     <div @click="scroll()"  class="navigation">
       <i class="fas fa-chevron-up"></i>
     </div>
@@ -12,7 +21,8 @@
     <projects/>
     <contact/>
     <bottom/>
-  </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -25,13 +35,15 @@ import projects from './components/projects'
 import contact from './components/contact'
 import bottom from './components/bottom.vue'
 import navMobile from './components/navMobile.vue'
+import { BreedingRhombusSpinner } from 'epic-spinners'
 
 
 
 export default {
   data() {
     return {
-      mobile : true 
+      mobile : true ,
+      isLoading : true
     }
   },
   components :  {
@@ -44,6 +56,7 @@ export default {
     contact,
     bottom,
     navMobile,
+    BreedingRhombusSpinner,
   },methods: {
     scroll : ()=>{
       window.scroll({
@@ -71,6 +84,13 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleNav);
     this.handleNav();
+
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 2000);
+
+
+    
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
@@ -83,6 +103,14 @@ export default {
 </script>
 
 <style scoped>
+.spinnerContainer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+
+
+}
 .fas{
   display:none;
   color: white;

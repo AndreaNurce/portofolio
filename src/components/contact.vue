@@ -6,26 +6,26 @@
   <div class="contact-section">
         <div class="section-wrapper">
             <div class="container-left">
-                <div class="container">
-                <i data-aos="zoom-in" class="fa-border-icon  fas fa-envelope-open-text"></i>
-                <div data-aos="fade-left" class="content">
+                <div data-aos="zoom-in"  class="container">
+                <i class="fa-border-icon  fas fa-envelope-open-text"></i>
+                <div  class="content">
                     <h4>Email</h4>
                     <br> 
                     <p>nurceandrea2@gmail.com</p>
                 </div>
                 </div>
-            <div class="container">
-                <i  data-aos="zoom-in" class="fa-border-icon  fas fa-mobile-alt"></i>
-                <div data-aos="fade-left" class="content">
+            <div data-aos="zoom-in"  class="container">
+                <i  class="fa-border-icon  fas fa-mobile-alt"></i>
+                <div  class="content">
                     <h4>Phone</h4>
                     <br>
                     <p>111-2222-333</p>
                 </div>
                 
             </div>
-                <div class="container">
-                    <i data-aos="zoom-in" class="fa-border-icon  fab fa-github"></i>
-                <div data-aos="fade-left" class="content">
+                <div data-aos="zoom-in"  class="container">
+                    <i class="fa-border-icon  fab fa-github"></i>
+                <div  class="content">
                     <h4>Github</h4>
                     <br>
                     <p>@AndreaNurce</p>
@@ -65,8 +65,13 @@ export default {
 }
 </script>
 <style scoped>
+.conent {
+    width: 100%;
+}
 section{
     margin-top:100px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .button{
@@ -225,6 +230,9 @@ padding : 60px 0;
 }
 textarea,.discussion-tittle,.head-container > *{
 width :100%;
+}
+.tittle{
+font-size: 35px;
 }
 .head-container > *{
 width : 100%;}

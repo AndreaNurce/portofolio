@@ -1,7 +1,7 @@
 <template>
 
-  <div id="main-bar" class="main-bar" data-aos-duration="900" >
-      <div class="nav-bar" data-aos="fade-down"  >
+  <div id="main-bar" class="main-bar" data-aos="fade-down" >
+      <div class="nav-bar"  >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
           <i  @click="show()" class="fas fa-bars"></i>
           <ul class="list" >
@@ -106,9 +106,9 @@ i{
 
 .main-bar{
     position:fixed;
+    z-index: 200;
     top: 0;
-    z-index: 100;
-    width: 100% ;
+    width: 100%;
     height: 80px;
    display: flex;
    justify-content: center;
@@ -152,7 +152,7 @@ background-color: white;
 right: 50%;
 width : 80%;
 transform: translateX(50%);
-z-index: -1000;
+z-index: -9999;
 list-style: none;
 }
 ul > a {
