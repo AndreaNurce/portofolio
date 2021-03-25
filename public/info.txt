@@ -1,1 +1,10 @@
 loremipsum
+
+</style><link href="/css/app.1ceee73d.css" 
+                     rel="preload" 
+                     as="style">
+    <link href="/css/chunk-vendors.abefdfc7.css" rel="preload" as="style">
+    <link href="/js/app.d5d5742e.js" rel="preload" as="script">
+    <link href="/js/chunk-vendors.9d6362ff.js" rel="preload" as="script">
+    <link href="/css/chunk-vendors.abefdfc7.css" rel="stylesheet">
+    <link href="/css/app.1ceee73d.css" rel="stylesheet"></head>
