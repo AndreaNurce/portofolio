@@ -4,7 +4,7 @@
      v-if="isLoading"
      class="spinnerContainer">
     <breeding-rhombus-spinner
-  :animation-duration="3000"
+  :animation-duration="2000"
   :size="200"
   color="#90acd1"
 /></div>
