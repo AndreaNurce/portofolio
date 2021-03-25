@@ -339,6 +339,8 @@ li{
 font-weight: 700;
 margin-bottom: 10px;
 transition: all 0.3s ease 0s;
+cursor : pointer;
+position:relative;
 
 }
 .resume-right{
@@ -354,7 +356,7 @@ transition: all 0.3s ease 0s;
 
 .current::before {
 position: absolute;
-margin-top:13.5px;
+top:50%;
 width: 20px;
 height: 2px;
 content: "";
