@@ -13,7 +13,7 @@
                         <img :src="require(`../assets/${item}.png`)" alt="">
 
                         <h2>{{dumbHeader[index]}}</h2>
-                        <p>{{dumbText}}</p>
+                        <p>{{dumbText[index]}}</p>
                     </div>  
                 </div>
             </div>
@@ -27,7 +27,7 @@ export default {
  data(){
   return{
     dumbHeader : ["Data analysis" , "Web Development","Content Mangement" , "Mobility"],
-    dumbText : "A complete web app solution for business",
+    dumbText : ["We’re entering a new world in which data may be more important than software","Designing consistently should be on the same track that is accuracy.","We don’t need more content we need to do less and obsess","What separates design from art is that design is meant to be… functional."],
     items: [1,2,3,4]
   }
 },    mounted() {

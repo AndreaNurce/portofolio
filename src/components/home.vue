@@ -5,11 +5,11 @@
             <h3 data-aos="fade-down" data-aos-duration="900">H E Y ! I  A M</h3>
             <h1 data-aos="fade-down" data-aos-duration="800">Andrea Nurçe !</h1>
             <h2 data-aos="fade-down" data-aos-duration="700">I'm a Web Developer .</h2>
-            <p data-aos="fade-down" data-aos-duration="600" >Lorem ipsum dolor sit amet consectetur mollitia in ad  Minus <br>mollitia in perspiciatis ad,  fuga quidem sunt impedit </p>
-            <div  class="download"><p data-aos="fade-down" data-aos-duration="600" >Download</p></div>
+            <p data-aos="fade-down" data-aos-duration="600" >Measuring programming progress by lines of code is like <br> measuring aircraft building progress by weight.</p>
+            <div @click="learnMore()"  class="download"><p data-aos="fade-down" data-aos-duration="600" >Learn more</p></div>
         </div>
         <div data-aos="zoom-out" class="home-right">
-            <img src="../assets/hero_right.png" alt="">
+            <img data-aos="zoom-out" src="../assets/hero_right.png" alt="">
         </div>
         </div>
         <br>
@@ -24,6 +24,11 @@ export default {
     },methods: {
         handleResize(){
         this.$store.state.home = this.$el.offsetTop;
+    },learnMore(){
+        window.scrollTo({
+            top : this.$store.state.services,
+            behavior : "smooth"
+        })
     }
     },created () {
     window.addEventListener('resize', this.handleResize);
