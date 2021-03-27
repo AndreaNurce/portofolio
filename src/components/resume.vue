@@ -53,18 +53,19 @@ export default {
             info : [
             {
                     tittle : 'Education',
-                    year : ["2020-2021","2020-2021"],
-                    logoClass : ["fa-graduation-cap","fa-graduation-cap"],
-                    field : ["Bachelor in Computer Science","Bachelor in Computer Science"],
-                    name : ["Facility of Natural Science","Facility of Natural Science"],
-                    description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
+                    year : ["2020-2023"],
+                    logoClass : ["fa-graduation-cap"],
+                    field : ["Bachelor in Informatics"],
+                    name : ["Facility of Natural Science"],
+                    description : ["I'm studiyng Informatics at Facility of Natural Science wich is part of University of Tirana. Currently I'm in the frst year of the bachelor degree. It's a public university and it's places in the capital city of Albania."]
             },{
                     tittle : 'Experience',
-                    year : ["2020-2021","2020-2021"],
+                    year : ["2018-2021","2020-2021"],
                     logoClass : ["fa-briefcase","fa-briefcase"],
-                    field : ["Bachelor in Computer Science","Bachelor in Computer Science"],
-                    name : ["Facility of Natural Science","Facility of Natural Science"],
-                    description : ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?","Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sint eos quo placeat nihil reprehenderit, dignissimos quod voluptate ab est nemo ratione corrupti earum ea aperiam dolores eum laborum dolor?"]
+                    field : ["Front-End","Back-end"],
+                    name : ["Selft tought ","Selft tought "],
+                    description : ["Meticulous web developer with over 2 years of front end experience and passion for responsive website design and a firm believer in the mobile-first approach. Implemented new responsive website approach which increased mobile traffic by 20%.",
+                    " Junior Back End Developer with 3 plus years of experience able to build Node.js/Express web applications from the ground up - information gathering, planning, design, development , delivery and maintenance. Extremely passionate towards software architecture and design combined with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions."]
             }
             ],
             skills : ["Photoshop" ,"Illustrator" , "HTML/CSS" , "Javascript" , "Vue.js","Node/Express" , "Git" , "Heroku" ,"MongoDB"],

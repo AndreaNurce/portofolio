@@ -104,7 +104,7 @@ a{
 
 }
 .image::after{
-content: "visit site";
+content: "Demo Project";
 position: absolute;
 opacity: 0;
 right: 0;
