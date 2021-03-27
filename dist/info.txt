@@ -1,10 +1,9 @@
-loremipsum
 
-</style><link href="/css/app.1ceee73d.css" 
-                     rel="preload" 
-                     as="style">
-    <link href="/css/chunk-vendors.abefdfc7.css" rel="preload" as="style">
-    <link href="/js/app.d5d5742e.js" rel="preload" as="script">
-    <link href="/js/chunk-vendors.9d6362ff.js" rel="preload" as="script">
-    <link href="/css/chunk-vendors.abefdfc7.css" rel="stylesheet">
-    <link href="/css/app.1ceee73d.css" rel="stylesheet"></head>
+About Me
+I’m a Web Developer . I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code.
+
+Name :          Andrea Nurçe
+Date of Birth : August 20 ,2002
+Country :       Albania
+Email :         nurceandrea2@gmail.com
+Education :     Student
