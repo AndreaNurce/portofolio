@@ -9,7 +9,7 @@
         </div>
         <div data-aos="zoom-in"  data-aos-duration="900" class="about-right">
             <h1 data-aos="flip-up" >About Me</h1>
-            <p>I’m a Front End Developer. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code. </p>
+            <p>I’m a Web Developer . I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code. </p>
             <ul>
                 <li><span>Name :</span> <span> Andrea Nurçe</span> </li>
                 <li><span>Date of Birth : </span> <span> August 20 ,2002</span> </li>

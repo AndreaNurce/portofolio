@@ -1,1 +1,9 @@
-loremipsum
+About Me
+I’m a Junior Full Stack Developer. 
+I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code.
+
+Name :          Andrea Nurçe
+Date of Birth : August 20 ,2002
+Country :       Albania
+Email :         nurceandrea2@gmail.com
+Education :     Student

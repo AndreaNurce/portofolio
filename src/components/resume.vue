@@ -65,7 +65,7 @@ export default {
                     field : ["Front-End","Back-end"],
                     name : ["Selft tought ","Selft tought "],
                     description : ["Meticulous web developer with over 2 years of front end experience and passion for responsive website design and a firm believer in the mobile-first approach. Implemented new responsive website approach which increased mobile traffic by 20%.",
-                    " Junior Back End Developer with 3 plus years of experience able to build Node.js/Express web applications from the ground up - information gathering, planning, design, development , delivery and maintenance. Extremely passionate towards software architecture and design combined with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions."]
+                    " Junior Back End Developer with 1 plus years of experience now  , able to build Node.js/Express web applications from the ground up - information gathering, planning, design, development , delivery and maintenance. Extremely passionate towards software architecture and design combined with sensitivity to serve the needs of the business balanced with the delivery of high quality solutions."]
             }
             ],
             skills : ["Photoshop" ,"Illustrator" , "HTML/CSS" , "Javascript" , "Vue.js","Node/Express" , "Git" , "Heroku" ,"MongoDB"],
