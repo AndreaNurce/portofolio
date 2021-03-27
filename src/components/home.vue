@@ -8,7 +8,7 @@
             <p data-aos="fade-down" data-aos-duration="600" >Lorem ipsum dolor sit amet consectetur mollitia in ad  Minus <br>mollitia in perspiciatis ad,  fuga quidem sunt impedit </p>
             <div  class="download"><p data-aos="fade-down" data-aos-duration="600" >Download</p></div>
         </div>
-        <div data-aos="zoom-out" data-aos-duration="900" class="home-right">
+        <div data-aos="zoom-out" class="home-right">
             <img src="../assets/hero_right.png" alt="">
         </div>
         </div>
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .home-right > img{
-    width: 500px;
+    height: 500px;
     transition: all 0.3s ease 0s;
 
 }
@@ -127,7 +127,7 @@ export default {
 @media screen and (max-width : 1098px) {
     
     .home-right > img{
-    width: 350px;
+    height: 350px;
     transition: all 0.3s ease 0s;
 
 }    .home-right {
