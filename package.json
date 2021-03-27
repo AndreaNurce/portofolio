@@ -2,7 +2,7 @@
   "name": "andreanurce",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://andreanurce.github.io/portofolio",
+  "homepage": "http://andreanurce.github.io/portofolio",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -27,7 +27,6 @@
     "vue-template-compiler": "^2.6.11",
     "ssri": ">=8.0.1",
     "is-svg": ">=4.2.2"
-
   },
   "eslintConfig": {
     "root": true,

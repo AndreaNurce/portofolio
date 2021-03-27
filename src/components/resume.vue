@@ -14,7 +14,7 @@
             <div  class="resume-right">
                 <div :key="index" v-for="(current, index) in info" :id="info[index].tittle">
                     <h1 data-aos="flip-up"   class="tittle">{{info[index].tittle}}</h1>
-                    <div data-aos="zoom-out-down" data-aos-delay="200" :key="index2" v-for="(current2, index2) in info[index].year" class="container">
+                    <div data-aos="zoom-out-down" data-aos-duration="400" :key="index2" v-for="(current2, index2) in info[index].year" class="container">
                         <div class="logo">
                             <i :class="info[index].logoClass[index2]" class="fa fas"></i>
                         </div>
