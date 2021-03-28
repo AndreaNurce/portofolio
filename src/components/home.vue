@@ -120,7 +120,7 @@ export default {
 @media screen and (max-width : 1233px) {
     
     .home-right > img{
-    width: 500px;
+    height: 400px;
     transition: all 0.3s ease 0s;
 
 }    .home-right {

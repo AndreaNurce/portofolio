@@ -107,7 +107,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width : 80%;
+    width : 75%;
    background-color: #F9F9FF;
     transition: all 0.5s ease 0s;
 
@@ -126,6 +126,9 @@ li{
     width: 60px;
     text-align: center;
 
+}
+ul > a >li:last-child{
+    padding: 25px 0 25px 8px;
 }
 ul > a {
     padding : 0 5px;

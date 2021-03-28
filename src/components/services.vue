@@ -70,8 +70,8 @@ export default {
 }
 .container{
   overflow: hidden;
-  padding: 50px 40px;
-  width: 240px ;
+  padding: 25px;
+  width : 180px ;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 0px 40px 0px rgba(85, 128, 255, 0.2);
@@ -141,14 +141,7 @@ line-height: 1.625em;
 .services-left > *{
     padding: 10px 0;
  }
-@media screen and (max-width : 1380px) {
-    .container{
-  padding: 30px 30px;
-  width: 200px ;
-  transition: all 0.6s ease-in-out;
 
-}
-}
 
 @media screen and (max-width : 1175px) {
     .container{

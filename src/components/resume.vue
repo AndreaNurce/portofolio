@@ -81,9 +81,9 @@ export default {
                 this.$store.state.resume = this.$el.offsetTop;
     },
         handleNav(el){
-            let education =  this.$store.state.resume + 200;
-            let expreience = document.querySelector('#Experience').offsetHeight + education;
-            let skills =  expreience + document.querySelector('#Education').offsetHeight  ;
+            let education =  this.$store.state.resume + 100;
+            let experience = education + document.querySelector('#Education').offsetHeight;
+            let skills =  experience + document.querySelector('#Experience').offsetHeight  ;
             
             if(el == 'Education'){
                 window.scrollTo({
@@ -93,7 +93,7 @@ export default {
 
             }if(el == 'Experience'){
                 window.scrollTo({
-                    top :expreience,
+                    top :experience,
                     behavior : 'smooth'
                 })
             
@@ -108,14 +108,14 @@ export default {
         handleScroll(){
             
         let education = document.querySelector('#Education').offsetHeight ;
-        let expreience = document.querySelector('#Experience').offsetHeight + education;
+        let experience = document.querySelector('#Experience').offsetHeight + education;
 
     
         if(window.pageYOffset > this.$store.state.resume  && window.pageYOffset < (this.$store.state.resume + education )){
                 this.tag = 'Education';
-        }else if(window.pageYOffset > (this.$store.state.resume + education) && window.pageYOffset < (this.$store.state.resume + expreience )){
+        }else if(window.pageYOffset > (this.$store.state.resume + education) && window.pageYOffset < (this.$store.state.resume + experience )){
                 this.tag = 'Experience';
-        }else if(window.pageYOffset > (this.$store.state.resume + expreience )){
+        }else if(window.pageYOffset > (this.$store.state.resume + experience )){
                 this.tag = 'Skills';
         }
          else{

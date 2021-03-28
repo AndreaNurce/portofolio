@@ -171,7 +171,7 @@ position: relative;
 .section-wrapper{
 display: flex;
 justify-content: center;
-width: 80%;
+width: 75%;
 }
 .fa-border-icon {
 border-width: 2px;
