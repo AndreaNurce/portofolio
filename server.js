@@ -23,6 +23,10 @@ app.use(function (req, res, next) {
     next();
 });
 
-const port = process.env.PORT || 8080
+app.post('/' ,  (req ,res)=>{
+    console.log('req called');
+})
 
+const port = process.env.PORT || 8080
+console.log(`server listening on port ${port}`);
 app.listen(port)
