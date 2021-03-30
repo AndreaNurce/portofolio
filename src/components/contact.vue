@@ -35,11 +35,11 @@
             </div>
             <div class="container-right">
                 <div class="head-container">
-               <input v-bind="name"  required  data-aos="fade-down" data-aos-duration="900"  type="text" name="" placeholder="Enter your name" > <input type="email" required v-bind="email" data-aos="fade-down" data-aos-duration="1000" placeholder="Enter your email" value="">
+               <input v-model="name"  required  data-aos="fade-down" data-aos-duration="900"  type="text" name="" placeholder="Enter your name" > <input type="email" required v-model="email" data-aos="fade-down" data-aos-duration="1000" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
-               <input   v-bind="tittle" data-aos="fade-down" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
-               <textarea data-aos="fade-down" v-bind="message" data-aos-duration="1200"  name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
+               <input   v-model="tittle" data-aos="fade-down" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
+               <textarea data-aos="fade-down" v-model="message" data-aos-duration="1200"  name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
                 <div class="button" @click="submit()" >Send a Message Now</div>
                 </div>
         </div>
@@ -62,14 +62,20 @@ export default {
         this.handleResize();
     },methods: {
         handleResize(){
-        this.$store.state.contact = this.$el.offsetTop -200;
+        this.$store.state.contact = this.$el.offsetTop - 200;
     },
-    submit(){
-        axios.post('http://localhost:8080/',{
-            name : 'andrea'
+    async submit(){
+        await axios.post('http://localhost:8080/',{
+            name : this.name,
+            email :this.email,
+            tittle : this.tittle,
+            message : this.message,
         })
-        console.log('asdfasdf');
-
+        
+        this.name = '';
+        this.email = '';
+        this.tittle = '';
+        this.message = '';
     }
     },created () {
     window.addEventListener('resize', this.handleResize);
