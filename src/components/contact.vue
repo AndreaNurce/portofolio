@@ -65,7 +65,7 @@ export default {
         this.$store.state.contact = this.$el.offsetTop - 200;
     },
     async submit(){
-        await axios.post('/',{
+        await axios.post('/contact',{
             name : this.name,
             email :this.email,
             tittle : this.tittle,

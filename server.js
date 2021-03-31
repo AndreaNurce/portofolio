@@ -57,7 +57,7 @@ async function main(sub, textMess ,email , name ) {
 
 
 
-app.post('/' ,  async (req ,res)=>{
+app.post('/contact' ,  async (req ,res)=>{
   main(req.body.tittle ,req.body.message   ,req.body.email , req.body.name ).catch(console.error);
 })
 
