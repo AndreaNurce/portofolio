@@ -65,7 +65,7 @@ export default {
         this.$store.state.contact = this.$el.offsetTop - 200;
     },
     async submit(){
-        await axios.post('http://andrea-portofolio.herokuapp.com/',{
+        await axios.post('/',{
             name : this.name,
             email :this.email,
             tittle : this.tittle,
