@@ -68,10 +68,10 @@ export default {
         this.$store.state.contact = this.$el.offsetTop - 200;
     },sendEmail: (e) => {
       emailjs.sendForm('service_dsjs0so', 'template_wzonkic', e.target, 'user_N2EUF50zkkIJtJv3jN4Gi')
-        .then((result) => {
-            console.log('SUCCESS!', result.status, result.text);
-        }, (error) => {
-            console.log('FAILED...', error);
+        .then(function ()  {
+            
+        }, function () {
+
         });
     },async submit(){
         await axios.post('https://portofolio-email-handler.herokuapp.com/',{
@@ -116,8 +116,9 @@ color: white;
 font-weight: 400;
 cursor: pointer;
 transition: all 0.3s ease 0s;
+border: none;
 }
-.button:hove{
+.button:hover{
 background-color: #90acd1;
 transition: all 0.3s ease 0s;
 }
