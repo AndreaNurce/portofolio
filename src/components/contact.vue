@@ -33,22 +33,25 @@
                 
             </div>
             </div>
+             <form class="contact-form" @submit.prevent="sendEmail">
             <div class="container-right">
                 <div class="head-container">
-               <input v-model="name"  required  data-aos="fade-down" data-aos-duration="900"  type="text" name="" placeholder="Enter your name" > <input type="email" required v-model="email" data-aos="fade-down" data-aos-duration="1000" placeholder="Enter your email" value="">
+               <input v-model="name"  required  data-aos="fade-down" data-aos-duration="900"  type="text" name="from_name" placeholder="Enter your name" > <input type="email" required v-model="email" name="from_email" data-aos="fade-down" data-aos-duration="1000" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
                <input   v-model="tittle" data-aos="fade-down" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
-               <textarea data-aos="fade-down" v-model="message" data-aos-duration="1200"  name="" id="" placeholder="Message" cols="30" rows="10"></textarea>
-                <div class="button" @click="submit()" >Send a Message Now</div>
+               <textarea data-aos="fade-down" v-model="message" data-aos-duration="1200"  name="message" id="" placeholder="Message" cols="30" rows="10"></textarea>
+           <button class="button"  >Send a Message Now</button>
                 </div>
         </div>
+             </form>
     </div>
   </div>
 </div>
 </template>
 <script>
 import axios from 'axios'
+import emailjs from 'emailjs-com';
 export default {
     data() {
         return {
@@ -63,9 +66,15 @@ export default {
     },methods: {
         handleResize(){
         this.$store.state.contact = this.$el.offsetTop - 200;
-    },
-    async submit(){
-        await axios.post('https://andrea-portofolio.herokuapp.com/contact',{
+    },sendEmail: (e) => {
+      emailjs.sendForm('service_dsjs0so', 'template_wzonkic', e.target, 'user_N2EUF50zkkIJtJv3jN4Gi')
+        .then((result) => {
+            console.log('SUCCESS!', result.status, result.text);
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+    },async submit(){
+        await axios.post('https://portofolio-email-handler.herokuapp.com/',{
             name : this.name,
             email :this.email,
             tittle : this.tittle,
@@ -77,7 +86,8 @@ export default {
         this.tittle = '';
         this.message = '';
     }
-    },created () {
+  }
+    ,created () {
     window.addEventListener('resize', this.handleResize);
     this.handleResize();
   },
@@ -186,7 +196,7 @@ background: #e45447;
 right: calc(50% - 50px);
 transform: translateX(50%);
 }
-.container-right , .container-left{
+form , .container-left{
 width : 50%;
 position: relative;
 }
