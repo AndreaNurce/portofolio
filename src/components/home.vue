@@ -2,9 +2,13 @@
   <div class="container-home" >
       <div class="sides-container">
         <div class="home-left">
+
             <h3 data-aos="fade-down" data-aos-duration="900">H E Y ! I  A M</h3>
             <h1 data-aos="fade-down" data-aos-duration="800">Andrea Nurçe !</h1>
-            <h2 data-aos="fade-down" data-aos-duration="700">I'm a Web Developer .</h2>
+
+            <vue-typed-js :strings="[' a Web Developer .', 'a Web Designer .' , 'a Freelancer .', 'a Developer .' ]" :backSpeed="50"  :loop="true">
+            <h2 class="h2" data-aos="fade-down" data-aos-duration="700" >I'm <span class="typing"></span></h2>
+            </vue-typed-js>
             <p data-aos="fade-down" data-aos-duration="600" >Measuring programming progress by lines of code is like <br> measuring aircraft building progress by weight.</p>
             <div @click="learnMore()"  class="download"><p data-aos="fade-down" data-aos-duration="600" >Learn more</p></div>
         </div>
@@ -103,7 +107,7 @@ export default {
     font-size: 60px  ;
     transition: all 0.3s ease 0s;
 
-}.home-left>h2{
+}.h2{
     font-size: 30px  ;
     color: #e45447;
     transition: all 0.3s ease 0s;
@@ -162,7 +166,7 @@ export default {
     font-size: 45px  ;
     transition: all 0.3s ease 0s;
 
-}.home-left>h2{
+}.h2{
     font-size: 23px  ;
     color: #e45447;
     transition: all 0.3s ease 0s;

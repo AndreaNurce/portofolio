@@ -4,6 +4,8 @@ import Vuex from 'vuex'
 import store from './store'
 import AOS from "aos"
 import 'aos/dist/aos.css'
+import VueTypedJs from 'vue-typed-js'
+Vue.use(VueTypedJs)
 
 
 Vue.config.productionTip = false

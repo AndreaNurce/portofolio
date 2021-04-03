@@ -50,7 +50,6 @@
 </div>
 </template>
 <script>
-import axios from 'axios'
 import emailjs from 'emailjs-com';
 export default {
     data() {
@@ -73,18 +72,6 @@ export default {
         }, function () {
 
         });
-    },async submit(){
-        await axios.post('https://portofolio-email-handler.herokuapp.com/',{
-            name : this.name,
-            email :this.email,
-            tittle : this.tittle,
-            message : this.message,
-        })
-        
-        this.name = '';
-        this.email = '';
-        this.tittle = '';
-        this.message = '';
     }
   }
     ,created () {
