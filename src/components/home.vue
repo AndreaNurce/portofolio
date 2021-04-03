@@ -10,7 +10,7 @@
             <h2 class="h2" data-aos="fade-down" data-aos-duration="700" >I'm <span class="typing"></span></h2>
             </vue-typed-js>
             <p data-aos="fade-down" data-aos-duration="600" >Measuring programming progress by lines of code is like <br> measuring aircraft building progress by weight.</p>
-            <div @click="learnMore()"  class="download"><p data-aos="fade-down" data-aos-duration="600" >Learn more</p></div>
+            <div  class="download"><p  @click="learnMore()" data-aos="fade-down" data-aos-duration="600" >Learn more</p></div>
         </div>
         <div data-aos="zoom-out" class="home-right">
             <img data-aos="zoom-out" src="../assets/hero_right.png" alt="">
@@ -47,6 +47,8 @@ export default {
 .home-right > img{
     height: 500px;
     transition: all 0.3s ease 0s;
+    -webkit-filter: drop-shadow(20px 30px 18px rgba(85, 128, 255, 0.2));
+    filter: drop-shadow(20px 30px 10px rgba(85, 128, 255, 0.2));
 
 }
 
@@ -56,7 +58,7 @@ export default {
     text-transform: capitalize;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -64,6 +66,8 @@ export default {
     padding: 30px 44px;
     border-radius: 50px;
     transition:  0.3s linear;
+    box-shadow: 0px 10px 15px 0px rgba(85, 128, 255, 0.2);
+
 
 }.download > p:hover{
     background-color: #E45447;
@@ -163,7 +167,7 @@ export default {
     font-size: 12px;
 }
 .home-left>h1{
-    font-size: 45px  ;
+    font-size: 410px  ;
     transition: all 0.3s ease 0s;
 
 }.h2{
