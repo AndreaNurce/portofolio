@@ -12,8 +12,8 @@
             <p data-aos="fade-down" data-aos-duration="600" >Measuring programming progress by lines of code is like <br> measuring aircraft building progress by weight.</p>
             <div  class="download"><p  @click="learnMore()" data-aos="fade-down" data-aos-duration="600" >Learn more</p></div>
         </div>
-        <div data-aos="zoom-out" class="home-right">
-            <img data-aos="zoom-out" src="../assets/hero_right.png" alt="">
+        <div  data-aos="zoom-out" class="home-right">
+            <img  v-tilt="{speed: 500, perspective: 1200 ,scale:1.05,glare : true ,'max-glare':0.5}"  data-aos="zoom-out" src="../assets/hero_right.png" alt="">
         </div>
         </div>
         <br>

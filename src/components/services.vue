@@ -8,8 +8,8 @@
         </div>
         <div class="services-right">
             <div class="containerWrapper" >
-                <div data-aos="zoom-in" v-bind:key = index v-for="(item,index) in items" >
-                    <div class="container">
+                <div v-tilt="{speed: 500, perspective: 900,  glare:false , 'max-glare':0.1}" data-aos="zoom-in" v-bind:key = index v-for="(item,index) in items" >
+                    <div class="container" >
                         <img :src="require(`../assets/${item}.png`)" alt="">
 
                         <h2>{{dumbHeader[index]}}</h2>

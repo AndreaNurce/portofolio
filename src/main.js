@@ -5,6 +5,8 @@ import store from './store'
 import AOS from "aos"
 import 'aos/dist/aos.css'
 import VueTypedJs from 'vue-typed-js'
+import VueTilt from 'vue-tilt.js'
+Vue.use(VueTilt)
 Vue.use(VueTypedJs)
 
 

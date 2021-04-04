@@ -1,7 +1,7 @@
 <template>
   <div class="container-about" >
       <div class="sides-container">
-        <div data-aos="zoom-in" data-aos-duration="400"  class="about-left">
+        <div data-aos="zoom-in" data-aos-duration="400"  class="about-left" v-tilt="{speed: 500, perspective: 900,  glare:false , 'max-glare':0.1}">
           
             <img src="../assets/Untitled-1.png"  alt="">
 
