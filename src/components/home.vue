@@ -5,7 +5,6 @@
 
             <h3 data-aos="fade-down" data-aos-duration="900">H E Y ! I  A M</h3>
             <h1 data-aos="fade-down" data-aos-duration="800">Andrea Nurçe !</h1>
-
             <vue-typed-js :strings="[' a Web Developer .', 'a Web Designer .' , 'a Freelancer .', 'a Developer .' ]" :backSpeed="50"  :loop="true">
             <h2 class="h2" data-aos="fade-down" data-aos-duration="700" >I'm <span class="typing"></span></h2>
             </vue-typed-js>
@@ -167,7 +166,7 @@ export default {
     font-size: 12px;
 }
 .home-left>h1{
-    font-size: 410px  ;
+    font-size: 40px  ;
     transition: all 0.3s ease 0s;
 
 }.h2{
