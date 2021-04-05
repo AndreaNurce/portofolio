@@ -3,7 +3,8 @@
   <div id="main-bar" class="main-bar" data-aos="fade-down" >
       <div class="nav-bar"  >
           <img style="width : 64px;padding:2px;" src="../assets/logo.png" alt="">
-          <i  @click="show()" class="fas fa-bars"></i>
+          <i v-show="showKey"  @click="show()" class="fas fa-bars"></i>
+          <i v-show="!showKey" @click="show()" class="fas fa-times"></i>
           <ul class="list" >
               <a  @click="scrollToTag('home')"  :class="{active: tag == 'home' }"  > <li>Home</li></a>
               <a  @click=" scrollToTag('services')" :class="{active: tag == 'services' }" > <li>Service</li></a>
@@ -23,7 +24,6 @@ export default {
     data() {
         return {
             tag : "home",
-            check : false,
             showKey : true,
         }
     },
@@ -94,8 +94,13 @@ handleScroll () {
 </script>
 
 <style scoped>
-.fa-bars{
+.fa-bars , .fa-times{
     font-size: 32px;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+}
+.fa-times{
+    font-size: 38px;
     transition: all .3s ease 0s;
     cursor: pointer;
 }
