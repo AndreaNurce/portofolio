@@ -1,6 +1,6 @@
 <template>
   <div class="projects-container">
-      <h1 data-aos="flip-up" >
+      <h1 data-aos="zoom-in" >
           My Projects
       </h1>
       <div class="wrapper">

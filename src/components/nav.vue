@@ -2,7 +2,7 @@
 
   <div  data-aos="fade-down" data-aos-duration="900"  id="main-bar" class="main-bar" >
       <div class="nav-bar">
-          <a href=""><img  style="width:64px;padding:2px;cursor:pointer;" src="../assets/logo.png" alt=""></a> 
+          <a href="/"><img  style="width:64px;padding:2px;cursor:pointer;" src="../assets/logo.png" alt=""></a> 
           <i  class="fas fa-bars"></i>
           <ul class="list" >
               <a  @click="scrollToTag('home')"  :class="{active: tag == 'home' }"  > <li>Home</li></a>

@@ -134,7 +134,7 @@ line-height: 1.625em;
 
 .services-right{
         width: 50%;
-        display: flex;
+      display: flex;
         
 
 }
@@ -221,12 +221,18 @@ line-height: 1.625em;
 @media screen and (max-width : 679px) {
 .containerWrapper{
   display:block;
-  margin-left: auto;
-  transform: translateX(-25%);
+
 
 }
 .container{
   width: 240px ;
+
+}.services-right{
+        width: 100%;
+      display: flex;
+      justify-content: center;
+    
+        
 
 }
 
@@ -250,7 +256,6 @@ line-height: 1.625em;
 
   .containerWrapper{
   display:block;
-  transform: translateX(0%);
 
 }
 

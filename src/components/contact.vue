@@ -1,6 +1,6 @@
 <template>
 <div class="section"  >
-          <h1 data-aos="flip-up" class="tittle">
+          <h1  data-aos="zoom-in" class="tittle">
           Contact Me
       </h1>
   <div class="contact-section">
@@ -36,11 +36,11 @@
              <form class="contact-form" @submit.prevent="sendEmail">
             <div class="container-right">
                 <div class="head-container">
-               <input v-model="name"  required  data-aos="fade-down" data-aos-duration="900"  type="text" name="from_name" placeholder="Enter your name" > <input type="email" required v-model="email" name="from_email" data-aos="fade-down" data-aos-duration="1000" placeholder="Enter your email" value="">
+               <input v-model="name"  required  data-aos="zoom-in" data-aos-duration="900"  type="text" name="from_name" placeholder="Enter your name" > <input type="email" required v-model="email" name="from_email" data-aos="zoom-in" data-aos-duration="1000" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
-               <input   v-model="tittle" data-aos="fade-down" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
-               <textarea data-aos="fade-down" v-model="message" data-aos-duration="1200"  name="message" id="" placeholder="Message" cols="30" rows="10"></textarea>
+               <input   v-model="tittle" data-aos="zoom-in" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
+               <textarea data-aos="zoom-in" v-model="message" data-aos-duration="1200"  name="message" id="" placeholder="Message" cols="30" rows="10"></textarea>
            <button class="button"  >Send a Message Now</button>
                 </div>
         </div>
@@ -97,7 +97,7 @@ section{
 display: flex;
 padding: 12px 24px;
 background-color: #e45447;
-width: 183px;
+width: 179px;
 border-radius: 50px;
 color: white;
 font-weight: 400;
@@ -155,14 +155,25 @@ outline: none;
 transition: all 0.3s ease 0s;
 }
 .tittle{
+ color: #222222;
 font-weight: 700;
 position: relative;
 font-size: 45px;
 line-height: 44px;
 text-align: center;
-padding: 79px;
+margin: 70px 0;
 
 }
+
+.projects-container > h1{
+    color: #222222;
+font-weight: 700;
+position: relative;
+font-size: 45px;
+line-height: 44px;
+text-align: center;
+margin: 70px 0;
+} 
 .tittle::before{
 width: 100px;
 height: 2px;    
@@ -206,8 +217,8 @@ display: flex;
 align-items: center ;
 padding: 10px 0;
 }
-.container > div {
-padding: 0 25px;
+.container > div:nth-child(2) {
+padding: 0  0 0 25px;
 }
 .container > h4 {
 font-family: "Poppins", sans-serif;
@@ -246,16 +257,22 @@ padding : 60px 0;
     .section-wrapper{
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 textarea,.discussion-tittle,.head-container > *{
 width :100%;
 }
-.tittle{
-font-size: 35px;
-}
+
 .head-container > *{
 width : 100%;}
+}
+.container-left , .contact-form{
+    width: 100%;
+}
+.button{
+    margin-left:auto;
+    margin-right:auto;
+    ;
+
 }
 
 </style>

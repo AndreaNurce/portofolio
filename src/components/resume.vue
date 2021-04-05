@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper">
-        <h1 data-aos="flip-up" class="resume">Resume</h1>
+        <h1 data-aos="zoom-in" class="resume">Resume</h1>
     <div class="container-resume" >
         <div class="sides-container">
             <div class="resume-left">
@@ -13,7 +13,7 @@
 
             <div   class="resume-right">
                 <div :key="index" v-for="(current, index) in info" :id="info[index].tittle">
-                    <h1 data-aos="flip-up"   class="tittle">{{info[index].tittle}}</h1>
+                    <h1 data-aos="zoom-in"   class="tittle">{{info[index].tittle}}</h1>
                     <div   data-aos="zoom-out-down" data-aos-duration="400" :key="index2" v-for="(current2, index2) in info[index].year" class="container" v-tilt="{speed: 500, perspective: 900,  glare:false , 'max-glare':0.1}">
                         <div class="logo">
                             <i :class="info[index].logoClass[index2]" class="fa fas"></i>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                    <h1 data-aos="flip-up" class="tittle" >Skills</h1>
+                    <h1 data-aos="zoom-in" v-onceclass="tittle" >Skills</h1>
                 <div class="skills-wrapper">
                     <div v-for="(skill ,index) in skills" :key="index" data-aos="fade-right"  class="skills-container">
                         <div class="skill-level" :style="{width:skillLevel[index]}">
