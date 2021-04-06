@@ -36,12 +36,12 @@
              <form class="contact-form" @submit.prevent="sendEmail">
             <div class="container-right">
                 <div class="head-container">
-               <input v-model="name"  required  data-aos="zoom-in" data-aos-duration="900"  type="text" name="from_name" placeholder="Enter your name" > <input type="email" required v-model="email" name="from_email" data-aos="zoom-in" data-aos-duration="1000" placeholder="Enter your email" value="">
+               <input   required  data-aos="zoom-in" data-aos-duration="900"  type="text" name="from_name" placeholder="Enter your name" > <input type="email" required  name="from_email" data-aos="zoom-in" data-aos-duration="1000" placeholder="Enter your email" value="">
                </div>
                <div class="bottom-container">
-               <input   v-model="tittle" data-aos="zoom-in" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
-               <textarea data-aos="zoom-in" v-model="message" data-aos-duration="1200"  name="message" id="" placeholder="Message" cols="30" rows="10"></textarea>
-           <button class="button"  >Send a Message Now</button>
+               <input    data-aos="zoom-in" data-aos-duration="1100" type="text" class="discussion-tittle" name="" placeholder="Discussion tittle" ><br>
+               <textarea data-aos="zoom-in"  data-aos-duration="1200"  name="message" id="" placeholder="Message" cols="30" rows="10"></textarea>
+           <button class="button" data-aos="zoom-in"    data-aos-duration="1300">Send a Message Now</button>
                 </div>
         </div>
              </form>
@@ -52,14 +52,6 @@
 <script>
 import emailjs from 'emailjs-com';
 export default {
-    data() {
-        return {
-            name : '',
-            email :'',
-            tittle : '',
-            message : ''
-        }
-    },
         mounted() {
         this.handleResize();
     },methods: {
@@ -76,7 +68,6 @@ export default {
   }
     ,created () {
     window.addEventListener('resize', this.handleResize);
-    this.handleResize();
   },
     destroyed () {
     window.addEventListener('resize', this.handleResize);

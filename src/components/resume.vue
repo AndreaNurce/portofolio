@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                    <h1 data-aos="zoom-in" v-onceclass="tittle" >Skills</h1>
+                    <h1 data-aos="zoom-in" class="tittle" >Skills</h1>
                 <div class="skills-wrapper">
                     <div v-for="(skill ,index) in skills" :key="index" data-aos="fade-right"  class="skills-container">
                         <div class="skill-level" :style="{width:skillLevel[index]}">

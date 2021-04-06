@@ -41,7 +41,6 @@ export default {
     }
     },created () {
     window.addEventListener('resize', this.handleResize);
-    this.handleResize();
   },
     destroyed () {
     window.addEventListener('resize', this.handleResize);
